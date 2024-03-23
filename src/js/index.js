@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  // PWA Service Worker
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(function (res) {
+        console.log("service worker registered");
+      })
+      .catch(function (err) {
+        console.log("service worker not registered", err);
+      });
+  }
+
   // Navbar Behavior
   $(window).scroll(function () {
     var $navbar = $("#navbar");
