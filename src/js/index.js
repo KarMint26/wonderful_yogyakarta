@@ -11,6 +11,25 @@ $(document).ready(function () {
       });
   }
 
+  // Loading Screen Behavior
+  var images = $("img");
+  var loadedImages = 0;
+
+  images.each(function () {
+    $(this).on("load", function () {
+      loadedImages++;
+      if (loadedImages === images.length) {
+        $(".loading-container").css("display", "none");
+      }
+    });
+  });
+
+  images.each(function () {
+    if (this.complete) {
+      $(this).trigger("load");
+    }
+  });
+
   // Navbar Behavior
   $(window).scroll(function () {
     var $navbar = $("#navbar");
