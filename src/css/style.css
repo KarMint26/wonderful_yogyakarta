@@ -11,6 +11,10 @@
   font-family: var(--fontPrimary);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth !important;
 }
