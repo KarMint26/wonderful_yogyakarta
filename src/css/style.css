@@ -1,0 +1,40 @@
+:root {
+    --primary: #E48E27;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Navigasi Bar */
+
+.jogja-icon {
+  width: 200px;
+  height: 50px;
+}
+
+.nav-item:first-child .nav-link {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+@media (min-width: 768px) {
+  .jogja-icon {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Hero Section */
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/image/hero-homepage/image-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}

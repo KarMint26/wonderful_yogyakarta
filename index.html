@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wonderful Yogyakarta</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icon/icon-short.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <nav class="navbar bg-body-transparent fixed-top px-2 px-sm-3 px-lg-4">
+      <div class="container-fluid d-flex justify-content-start gap-4">
+        <a class="navbar-brand" href="#">
+          <img class="jogja-icon" src="./src/assets/icon/icon.svg" alt="icon" />
+        </a>
+        <button
+        style="border: none !important; outline: none !important; box-shadow: none !important;"
+          class="navbar-toggler ms-auto text-white d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="fs-2">
+            <i class="bi bi-list"></i>
+          </span>
+        </button>
+        <ul
+          class="navbar-nav d-lg-flex d-none justify-content-center align-items-center flex-row gap-5"
+        >
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Articles</a>
+          </li>
+        </ul>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                class="jogja-icon"
+                src="./src/assets/icon/icon.svg"
+                alt="icon"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Travel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image"></div>
+
+    <!-- Javascript External -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
