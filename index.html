@@ -31,6 +31,9 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
+    <!-- GSAP Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
     <!-- Meta Tag Open Graph -->
     <meta property="og:title" content="Wonderful Yogyakarta" />
     <meta
@@ -270,9 +273,26 @@
     <!-- Section About -->
     <section
       id="about"
-      class="d-flex justify-content-center align-items-center py-5"
+      class="d-flex justify-content-center align-items-center flex-column py-4 py-sm-5 px-5"
     >
-      <h1>About Jogjakarta</h1>
+      <div
+        class="text-center d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="top-text-head">
+          <span class="intro">INTRODUCE</span> WONDERFUL
+        </h1>
+        <h1 class="bot-text-head">YOGYAKARTA SITE</h1>
+      </div>
+      <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row mt-3 gap-4">
+        <img class="img-maps" src="./src/assets/image/about/maps.png" alt="maps" />
+        <p class="desc-about">
+          Wonderful Yogyakarta is a website dedicated to promoting the culture,
+          tourism and history of Yogyakarta, Special Region of Yogyakarta (DIY).
+          Our mission is to be a trusted and comprehensive source of information
+          for travelers who want to explore Yogyakarta and experience its
+          incredible beauty.
+        </p>
+      </div>
     </section>
 
     <!-- Javascript External -->
@@ -282,6 +302,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./src/js/gsap.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>

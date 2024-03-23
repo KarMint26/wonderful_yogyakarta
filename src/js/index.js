@@ -50,7 +50,6 @@ $(document).ready(function () {
   let SliderDom = carouselDom.find(".list");
   let thumbnailBorderDom = $(".carousel .thumbnail");
   let thumbnailItemsDom = thumbnailBorderDom.find(".item");
-  let timeDom = $(".carousel .time");
 
   thumbnailBorderDom.append(thumbnailItemsDom.first());
   let timeRunning = 3000;

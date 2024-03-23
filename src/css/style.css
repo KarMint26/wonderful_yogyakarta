@@ -412,3 +412,36 @@ html {
     font-size: 15px;
   }
 }
+
+/* About / Introduce Yogyakarta Page */
+#about h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.intro {
+  color: var(--primary);
+}
+
+#about img {
+  width: 100%;
+}
+
+#about .desc-about {
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #about h1 {
+    font-size: 2rem;
+  }
+  #about .desc-about {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #about h1 {
+    font-size: 2.5rem;
+  }
+}
