@@ -38,3 +38,39 @@ gsap.from(".modal-btn-history", 1.5, {
   delay: 0.8,
   scrollTrigger: top,
 });
+
+// Hotels Section
+gsap.from(".hotels-head", 0.9, {
+  opacity: 0,
+  x: -100,
+  delay: 0.8,
+  scrollTrigger: top,
+});
+
+gsap.from(".hotels-title", 1, {
+  opacity: 0,
+  x: -100,
+  delay: 1,
+  scrollTrigger: top,
+});
+
+gsap.from(".hotels-location", 1.1, {
+  opacity: 0,
+  x: -100,
+  delay: 1.2,
+  scrollTrigger: top,
+});
+
+gsap.from(".navigation-carousel", 1.2, {
+  opacity: 0,
+  y: 50,
+  delay: 0.8,
+  scrollTrigger: top,
+});
+
+gsap.from(".carousel-container", 1.2, {
+  opacity: 0,
+  scale: 0,
+  delay: 0.8,
+  scrollTrigger: top,
+});

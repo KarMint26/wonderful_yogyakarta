@@ -671,6 +671,14 @@ html {
   cursor: pointer;
 }
 
+#hotels .card-carousel .carousel-image {
+  transition: 300ms ease-in-out;
+}
+
+#hotels .card-carousel:hover .carousel-image {
+  transform: scale(1.05);
+}
+
 #hotels .card-carousel:nth-child(1) .carousel-image {
   width: 100%;
   height: 250px;
