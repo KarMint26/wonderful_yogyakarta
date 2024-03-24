@@ -30,19 +30,6 @@ $(document).ready(function () {
     }
   });
 
-  // Navbar Behavior
-  $(window).scroll(function () {
-    var $navbar = $("#navbar");
-    $navbar.toggleClass("scrolled", $(this).scrollTop() > $navbar.height());
-    if ($(this).scrollTop() > $navbar.height()) {
-      $(".nav-link").css("color", "#000");
-      $(".navbar-toggler").css("color", "#000");
-    } else {
-      $(".nav-link").css("color", "#fff");
-      $(".navbar-toggler").css("color", "#fff");
-    }
-  });
-
   // Carousel Behavior
   let nextDom = $("#next");
   let prevDom = $("#prev");
@@ -93,4 +80,34 @@ $(document).ready(function () {
       nextDom.click();
     }, timeAutoNext);
   }
+
+  // Button Back to top and Navbar
+  function handleScroll() {
+    if ($(window).scrollTop() > 30) {
+      $(".nav-link").css("color", "#000");
+      $(".navbar-toggler").css("color", "#000");
+      $("#navbar").css("backgroundColor", "#fff");
+    } else {
+      $(".nav-link").css("color", "#fff");
+      $(".navbar-toggler").css("color", "#fff");
+      $("#navbar").css("backgroundColor", "transparent");
+    }
+
+    if ($(window).scrollTop() > 30) {
+      $(".button-backtop").css("display", "block");
+    } else {
+      $(".button-backtop").css("display", "none");
+    }
+  }
+
+  $(window).on("scroll resize load", handleScroll);
+
+  $(".button-backtop").click(() => {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      "smooth"
+    );
+  });
 });
