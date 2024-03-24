@@ -100,6 +100,8 @@ $(document).ready(function () {
     }
   }
 
+  handleScroll();
+
   $(window).on("scroll resize load", handleScroll);
 
   $(".button-backtop").click(function () {
