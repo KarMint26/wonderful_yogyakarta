@@ -528,6 +528,7 @@ html {
 /* Footer Styling */
 .footer-d {
   background-color: var(--footerColor) !important;
+  padding: 0 3rem;
 }
 
 .footer-thumb {
@@ -558,6 +559,9 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer-d {
+    padding: 0 5rem;
+  }
   .footer-thumb {
     list-style-type: none;
     gap: 10rem;
