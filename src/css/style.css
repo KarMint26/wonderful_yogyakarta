@@ -518,6 +518,7 @@ html {
   .thumb-history {
     height: 400px;
     margin-bottom: 1.25rem;
+    background-position-y: -80px;
   }
 }
 
