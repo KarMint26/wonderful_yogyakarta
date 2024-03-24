@@ -1,16 +1,16 @@
 /* Font Google Embbed Link */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 /* Global Styling and CSS Variable */
 :root {
   --primary: #e48e27;
-  --footerColor: #2C2C2C;
+  --secondary: #e61c5d;
+  --footerColor: #2c2c2c;
   --fontPrimary: "Poppins", sans-serif;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 html {
@@ -267,6 +267,9 @@ html {
   font-family: monospace;
   font-weight: bold;
   transition: 0.5s;
+}
+.arrows button i {
+  font-size: 1.5rem;
 }
 .arrows button:hover {
   background-color: #fff;
@@ -579,7 +582,7 @@ html {
 
 .copyright-m {
   color: #fff;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .list-nav-m a {
@@ -591,4 +594,220 @@ html {
 .social-media-m a {
   color: #fff;
   font-size: 1.2rem;
+}
+
+/* Hotels Section */
+#hotels {
+  background-color: var(--footerColor);
+  padding: 2.5rem 2rem 2rem;
+  width: 100%;
+  height: fit-content;
+}
+
+#hotels .hotels-head {
+  font-family: "Barlow", sans-serif;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  transform: translateY(0.5rem);
+  text-align: center;
+}
+
+#hotels .hotels-title {
+  color: #fff;
+  text-align: center;
+}
+
+#hotels .hotels-location {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#hotels .arr {
+  background-color: #c9c9c9;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+#hotels .arr:hover {
+  background-color: #eaeaea;
+}
+
+#hotels .arr i {
+  font-size: 1.8rem;
+}
+
+#hotels .carousel-container {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  overflow-x: scroll;
+}
+
+#hotels .carousel-container::-webkit-scrollbar {
+  width: 0;
+}
+
+#hotels .card-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#hotels .card-carousel:nth-child(1) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel:nth-child(2) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel:nth-child(3) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel:nth-child(4) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel:nth-child(5) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel:nth-child(6) .carousel-image {
+  width: 100%;
+  height: 250px;
+  background: url("../assets/image/carousel-image/image-6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hotels .card-carousel .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+#hotels .card-carousel .card-body h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#hotels .card-carousel .card-body .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hotels .card-carousel .card-body .location p {
+  color: #5f5f5f;
+  font-size: .9rem;
+}
+
+#hotels .card-carousel .card-body .location .ratting-card {
+  padding: .3rem .5rem;
+  background-color: #ffbd3928;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ffbd39;
+  border-radius: 1rem;
+  font-size: .9rem;
+  transform: translateY(-0.5rem);
+}
+
+#hotels .card-carousel .card-body .price-hotels {
+  color: var(--secondary);
+}
+
+#hotels .card-carousel .card-body .price-hotels .price-suffix {
+  font-size: 1rem;
+  color: #858585;
+}
+
+#hotels .card-carousel .card-body .tiketcom {
+  font-size: .8rem;
+  color: #5f5f5f;
+}
+
+#hotels .card-carousel .card-body .tiketcom a {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+@media screen and (min-width: 768px) {
+  #hotels {
+    padding: 3.5rem 3rem 3rem;
+  }
+  #hotels .hotels-head {
+    letter-spacing: 0.3rem;
+    text-align: left;
+  }
+  #hotels .hotels-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  #hotels .hotels-location {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  #hotels .card-carousel {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hotels .hotels-title {
+    font-size: 2.5rem;
+  }
+  #hotels .hotels-location {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
 }
