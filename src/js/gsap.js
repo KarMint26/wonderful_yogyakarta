@@ -11,66 +11,86 @@ gsap.from(".navbar-nav", 0.8, {
 gsap.from(".top-text-head", 1.2, {
   opacity: 0,
   x: 50,
-  delay: 0.5,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".top-text-head",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 gsap.from(".bot-text-head", 1.2, {
   opacity: 0,
   x: -50,
-  delay: 0.8,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".bot-text-head",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 gsap.from(".desc-about", 1.2, {
   opacity: 0,
   x: 50,
-  delay: 1.1,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".desc-about",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 gsap.from(".img-maps", 1.4, {
   opacity: 0,
   y: 100,
-  delay: 1,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".img-maps",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 gsap.from(".modal-btn-history", 1.5, {
   opacity: 0,
   scale: 0,
-  delay: 0.8,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".modal-btn-history",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 
 // Hotels Section
 gsap.from(".hotels-head", 0.9, {
   opacity: 0,
   x: -100,
-  delay: 0.8,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".hotels-head",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 
 gsap.from(".hotels-title", 1, {
   opacity: 0,
   x: -100,
-  delay: 1,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".hotels-title",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 
 gsap.from(".hotels-location", 1.1, {
   opacity: 0,
   x: -100,
-  delay: 1.2,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".hotels-location",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 
 gsap.from(".navigation-carousel", 1.2, {
   opacity: 0,
   y: 50,
-  delay: 0.8,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".navigation-carousel",
+    start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
 
 gsap.from(".carousel-container", 1.2, {
   opacity: 0,
   scale: 0,
-  delay: 0.8,
-  scrollTrigger: top,
+  scrollTrigger: {
+    trigger: ".carousel-container",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
 });
