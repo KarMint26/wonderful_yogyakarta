@@ -110,7 +110,7 @@ const dataTravelsKulonprogo = [
     title: "Kalibiru",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-wk.png",
     price: "IDR 20.000",
-    desc: "Deskripsi : Kalibiru is located in the Menoreh hill. This Tourism Village is an ecotourism object that has beautiful scenery and natural landscape of Sermo Reservoir seen from a height. ",
+    desc: "Kalibiru is located in the Menoreh hill. This Tourism Village is an ecotourism object that has beautiful scenery and natural landscape of Sermo Reservoir seen from a height. ",
     time: "08.00-17.00 WIB",
     location: "Waduk Sermo, Kokap, Kulon Progo, Yogyakarta",
     maps: "https://maps.app.goo.gl/qt66imKpLFQrQAn56",
@@ -183,7 +183,7 @@ const renderCard = (listData, container) =>
         <div class="card card-travel rounded-4 p-3">
             <div class="card-travel-body d-flex flex-column flex-lg-row gap-3">
               <div class="img-container">
-                <img src=${data.image} alt="sleman" class="object-fit-cover rounded-5" style="width: 100%; height: 100%;" />
+                <img src=${data.image} alt=${data.title} class="object-fit-cover rounded-5" style="width: 100%; height: 100%;" />
               </div>
               <div class="card-desc d-flex flex-column">
                 <h1 class="mt-2">${data.title}</h1>
@@ -208,7 +208,7 @@ const renderCard = (listData, container) =>
             <a href=${data.maps} target="_blank" class="btn-primary card-left-p" style="width: 10.5rem;"> <i class="bi bi-eye-fill h6" style="margin-right: .5rem;"></i> Visit Now</a>
           </div>
           <div class="img-container">
-            <img src=${data.image} alt="sleman" class="object-fit-cover" style="width: 100%; height: 100%;" />
+            <img src=${data.image} alt=${data.title} class="object-fit-cover" style="width: 100%; height: 100%;" />
           </div>
         </div>
       </div>`;
