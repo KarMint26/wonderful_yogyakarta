@@ -105,19 +105,20 @@ $(document).ready(function () {
   $(window).on("scroll resize load", handleScroll);
 
   var counter = 1;
-  var audio = new Audio("../assets/sound/backsound.mp3");
-  
+  var audio = new Audio("/src/assets/sound/backsound.mp3");
+
   audio.volume = 0.3;
   audio.loop = true;
 
+  audio.play();
   $(".backsound-btn").click(function () {
     if (counter === 1) {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
-      audio.play(); // Play the sound
+      audio.pause(); // Play the sound
       counter = 2;
     } else {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
-      audio.pause(); // Stop the sound
+      audio.play(); // Stop the sound
       counter = 1;
     }
   });
