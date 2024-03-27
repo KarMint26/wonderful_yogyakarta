@@ -114,7 +114,7 @@ $(document).ready(function () {
   $(".backsound-btn").click(function () {
     if (counter === 1) {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
-      audio.pause(); // Play the sound
+      audio.pause(); // Pause the sound
       counter = 2;
     } else {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
