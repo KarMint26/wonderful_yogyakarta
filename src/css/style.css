@@ -477,7 +477,7 @@ html {
   height: 250px;
   border-radius: 0.8rem;
   margin-bottom: 1.15rem;
-  background: url("../assets/image/history/history-jogja.png");
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/history-jogja.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -673,7 +673,12 @@ html {
 }
 
 #hotels .card-carousel .carousel-image {
+  width: 100%;
+  height: 250px;
   transition: 300ms ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #hotels .card-carousel:hover .carousel-image {
@@ -681,57 +686,27 @@ html {
 }
 
 #hotels .card-carousel:nth-child(1) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-1.png");
 }
 
 #hotels .card-carousel:nth-child(2) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-2.png");
 }
 
 #hotels .card-carousel:nth-child(3) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-3.png");
 }
 
 #hotels .card-carousel:nth-child(4) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-4.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-4.png");
 }
 
 #hotels .card-carousel:nth-child(5) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-5.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-5.png");
 }
 
 #hotels .card-carousel:nth-child(6) .carousel-image {
-  width: 100%;
-  height: 250px;
-  background: url("../assets/image/carousel-image/image-6.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/image-6.png");
 }
 
 #hotels .card-carousel .card-body {
@@ -817,5 +792,135 @@ html {
   #hotels .hotels-location {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+  }
+}
+
+/* Testimoni */
+#testimoni {
+  padding: 2.5rem 2rem 2rem;
+}
+
+#testimoni .title-testimoni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#testimoni .title-testimoni h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#testimoni .title-testimoni p {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+#testimoni .testimoni-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+
+#testimoni .testimoni-container .testimoni-card {
+  position: relative;
+  width: 300px;
+  height: fit-content;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+#testimoni .testimoni-container .testimoni-card::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  right: -0.95rem;
+  width: 330px;
+  height: 190px;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  z-index: -10;
+}
+
+#testimoni .testimoni-container .testimoni-card .photo-testimoni {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  gap: 0.9rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+#testimoni .testimoni-container .testimoni-card .photo-testimoni img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#testimoni .testimoni-container .testimoni-card .photo-testimoni .photo-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#testimoni .testimoni-container .testimoni-card .photo-testimoni .country {
+  color: #818181;
+}
+
+#testimoni .testimoni-container .testimoni-card .ratting-star {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+#testimoni .testimoni-container .testimoni-card .text-testimoni {
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 768px) {
+  #testimoni {
+    padding: 3.5rem 3rem 3rem;
+  }
+
+  #testimoni .title-testimoni {
+    margin-bottom: 1.5rem;
+  }
+
+  #testimoni .title-testimoni h1 {
+    font-size: 2.5rem;
+  }
+  
+  #testimoni .title-testimoni p {
+    font-size: 1rem;
+  }
+
+  #testimoni .testimoni-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  #testimoni {
+    padding: 3.5rem 3rem 3rem;
+  }
+
+  #testimoni .title-testimoni h1 {
+    font-size: 3rem;
+  }
+  
+  #testimoni .title-testimoni p {
+    font-size: 1.15rem;
+  }
+
+  #testimoni .testimoni-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
   }
 }

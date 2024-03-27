@@ -40,7 +40,7 @@ gsap.from(".img-maps", 1.4, {
     start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
-gsap.from(".modal-btn-history", 1.5, {
+gsap.from(".modal-btn-history", 1.2, {
   opacity: 0,
   scale: 0,
   scrollTrigger: {
@@ -91,6 +91,24 @@ gsap.from(".carousel-container", 1.2, {
   scale: 0,
   scrollTrigger: {
     trigger: ".carousel-container",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from(".title-testimoni", 1.3, {
+  opacity: 0,
+  scale: 0,
+  scrollTrigger: {
+    trigger: ".title-testimoni",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from(".testimoni-container", 1.2, {
+  opacity: 0,
+  y: 100,
+  scrollTrigger: {
+    trigger: ".testimoni-container",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });

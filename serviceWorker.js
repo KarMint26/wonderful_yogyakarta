@@ -2,16 +2,17 @@ const staticWonderfulYogyakarta = "wonderful-yogyakarta";
 const assets = [
   "/",
   "/index.html",
+  "src/pages/travel.html",
+  "src/pages/culture.html",
+  "src/pages/culinary.html",
   "src/css/styles.css",
   "src/js/index.js",
+  "src/assets/icon/icon-short.png",
+  "src/assets/icon/icon.png",
   "src/assets/pwa/icon-192x192.png",
   "src/assets/pwa/icon-256x256.png",
   "src/assets/pwa/icon-384x384.png",
   "src/assets/pwa/icon-512x512.png",
-  "src/assets/image/hero-homepage/image-1.png",
-  "src/assets/image/hero-homepage/image-2.png",
-  "src/assets/image/hero-homepage/image-3.png",
-  "src/assets/image/hero-homepage/image-4.png",
 ];
 
 self.addEventListener("install", (installEvent) => {
