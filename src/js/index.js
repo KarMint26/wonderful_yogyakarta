@@ -105,7 +105,7 @@ $(document).ready(function () {
   $(window).on("scroll resize load", handleScroll);
 
   var counter = 1;
-  var audio = new Audio("../assets/sound/backsound.mp3");
+  var audio = new Audio("/src/assets/sound/backsound.mp3");
   
   audio.volume = 0.3;
   audio.loop = true;
