@@ -45,16 +45,16 @@ section .hero-img {
 }
 
 section.hero h1 {
-  font-size: 10rem;
+  font-size: 3.5rem;
   color: white;
-  line-height: 8rem;
+  line-height: 4rem;
   font-family: "jsmath";
   text-shadow: 0 5px 10px #0004;
 }
 
 p.title-desc {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   text-shadow: 0 10px 5px 10px #0004;
 }
@@ -78,18 +78,16 @@ a.btn-primary {
   margin-bottom: 0.5rem;
 }
 
-.card-left-p {
-  padding-left: 0.6rem;
-}
-
 .card-travel {
   margin-bottom: 1.5rem;
 }
 
+.card-desc {
+  width: 100%;
+}
+
 .card-travel .img-container {
-  width: 50% !important;
-  padding: 1rem;
-  height: 22rem;
+  height: 15rem;
   object-fit: cover;
   object-position: center;
   border-radius: 2rem !important;
@@ -101,4 +99,41 @@ a.btn-primary {
 
 .card-travel-second {
   background-color: #4545451f;
+}
+
+@media screen and (min-width: 768px) {
+  section.hero h1 {
+    font-size: 5rem;
+  }
+  p.title-desc {
+    font-size: 1.2rem;
+  }
+  .card.card-travel {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .card-travel .img-container {
+    height: 22rem;
+  }
+  .card-left-p {
+    padding-left: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.hero h1 {
+    font-size: 10rem;
+    line-height: 8rem;
+  }
+  p.title-desc {
+    font-size: 1.4rem;
+  }
+
+  .card-desc {
+    width: 50%;
+  }
+  .card-travel .img-container {
+    width: 50% !important;
+    padding: 1rem;
+  }
 }
