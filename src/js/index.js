@@ -114,12 +114,12 @@ $(document).ready(function () {
 
   $(".backsound-btn").click(function () {
     if (counter === 1) {
-      $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
-      audio.play(); // Play the sound
-      counter = 2;
-    } else {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
       audio.pause(); // Stop the sound
+      counter = 2;
+    } else {
+      $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
+      audio.play(); // Play the sound
       counter = 1;
     }
   });
