@@ -133,7 +133,7 @@ html {
   color: #fff;
 }
 
-.nav-item:first-child .nav-link {
+.nav-item .nav-link.active {
   color: var(--primary) !important;
 }
 
@@ -757,11 +757,11 @@ html {
 
 #hotels .card-carousel .card-body .location p {
   color: #5f5f5f;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 #hotels .card-carousel .card-body .location .ratting-card {
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   background-color: #ffbd3928;
   display: flex;
   justify-content: center;
@@ -769,7 +769,7 @@ html {
   gap: 0.4rem;
   color: #ffbd39;
   border-radius: 1rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   transform: translateY(-0.5rem);
 }
 
@@ -783,7 +783,7 @@ html {
 }
 
 #hotels .card-carousel .card-body .tiketcom {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #5f5f5f;
 }
 
@@ -923,7 +923,7 @@ html {
   #testimoni .title-testimoni h1 {
     font-size: 2.5rem;
   }
-  
+
   #testimoni .title-testimoni p {
     font-size: 1rem;
   }
@@ -932,7 +932,6 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -943,7 +942,7 @@ html {
   #testimoni .title-testimoni h1 {
     font-size: 3rem;
   }
-  
+
   #testimoni .title-testimoni p {
     font-size: 1.15rem;
   }
