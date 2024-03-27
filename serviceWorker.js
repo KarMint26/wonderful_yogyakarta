@@ -13,6 +13,7 @@ const assets = [
   "src/assets/pwa/icon-256x256.png",
   "src/assets/pwa/icon-384x384.png",
   "src/assets/pwa/icon-512x512.png",
+  "src/assets/sound/backsound.mp3",
 ];
 
 self.addEventListener("install", (installEvent) => {
