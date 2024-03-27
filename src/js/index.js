@@ -110,15 +110,14 @@ $(document).ready(function () {
   audio.volume = 0.3;
   audio.loop = true;
 
-  audio.play();
   $(".backsound-btn").click(function () {
     if (counter === 1) {
-      $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
-      audio.pause(); // Pause the sound
-      counter = 2;
-    } else {
       $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
       audio.play(); // Stop the sound
+      counter = 2;
+    } else {
+      $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
+      audio.pause(); // Pause the sound
       counter = 1;
     }
   });

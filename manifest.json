@@ -1,32 +1,32 @@
 {
-    "theme_color": "#e48e27",
-    "background_color": "#ffca88",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Wonderful Yogyakarta",
-    "short_name": "WondYogya",
-    "description": "A website that displays the beauty and richness of culture and tourist destinations in Yogyakarta.",
-    "icons": [
-        {
-            "src": "src/assets/pwa/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "src/assets/pwa/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "src/assets/pwa/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "src/assets/pwa/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#e48e27",
+  "background_color": "#ffebd2",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Wonderful Yogyakarta",
+  "short_name": "WondYogya",
+  "description": "A website that displays the beauty and richness of culture and tourist destinations in Yogyakarta.",
+  "icons": [
+    {
+      "src": "src/assets/pwa/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "src/assets/pwa/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "src/assets/pwa/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "src/assets/pwa/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
