@@ -17,11 +17,40 @@ html {
   scroll-behavior: smooth !important;
 }
 
-/* Button Back To Top */
-.button-backtop {
+/* Button Back To Top and backsound button */
+.wrapper-sidebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
   position: fixed;
   bottom: 15px;
   right: 15px;
+  z-index: 999;
+}
+
+.backsound-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 0 0 1.5px var(--primary);
+  background: #fff;
+}
+
+.backsound-btn i {
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 35px;
+}
+
+.button-backtop {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -31,7 +60,6 @@ html {
   display: none;
   box-shadow: 0 0 0 1.5px rgb(236, 154, 0);
   background: var(--primary);
-  z-index: 999;
 }
 
 .button-backtop i {
@@ -834,6 +862,7 @@ html {
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
 #testimoni .testimoni-container .testimoni-card::before {

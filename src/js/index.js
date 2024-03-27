@@ -104,6 +104,24 @@ $(document).ready(function () {
 
   $(window).on("scroll resize load", handleScroll);
 
+  var counter = 1;
+  var audio = new Audio("../assets/sound/backsound.mp3");
+  
+  audio.volume = 0.3;
+  audio.loop = true;
+
+  $(".backsound-btn").click(function () {
+    if (counter === 1) {
+      $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
+      audio.play(); // Play the sound
+      counter = 2;
+    } else {
+      $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
+      audio.pause(); // Stop the sound
+      counter = 1;
+    }
+  });
+
   $(".button-backtop").click(function () {
     $("html, body").animate(
       {
