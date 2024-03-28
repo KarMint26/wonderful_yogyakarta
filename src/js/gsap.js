@@ -108,19 +108,6 @@ gsap.from("section.hero a.btn-primary", 1.8, {
   opacity: 0,
 });
 
-// Travel Section
-gsap.from("section.hero h1", 1, {
-  y: 200,
-});
-gsap.from("section.hero p.title-desc", 1.2, {
-  y: 220,
-  opacity: 0,
-});
-gsap.from("section.hero a.btn-primary", 1.8, {
-  y: 250,
-  opacity: 0,
-});
-
 gsap.from(".title-testimoni", 1.3, {
   opacity: 0,
   scale: 0,

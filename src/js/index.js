@@ -1,34 +1,6 @@
 $(document).ready(function () {
-  // PWA Service Worker
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(function (res) {
-        console.log("service worker registered");
-      })
-      .catch(function (err) {
-        console.log("service worker not registered", err);
-      });
-  }
-
-  // Loading Screen Behavior
-  var images = $("img");
-  var loadedImages = 0;
-
-  images.each(function () {
-    $(this).on("load", function () {
-      loadedImages++;
-      if (loadedImages === images.length) {
-        $(".loading-container").css("display", "none");
-      }
-    });
-  });
-
-  images.each(function () {
-    if (this.complete) {
-      $(this).trigger("load");
-    }
-  });
+  // set active navbar
+  injectNavbar("home");
 
   // Carousel Behavior
   let nextDom = $("#next");
@@ -80,56 +52,6 @@ $(document).ready(function () {
       nextDom.click();
     }, timeAutoNext);
   }
-
-  // Button Back to top and Navbar
-  function handleScroll() {
-    if ($(window).scrollTop() > 30) {
-      $(".nav-link").css("color", "#000");
-      $(".navbar-toggler").css("color", "#000");
-      $("#navbar").css("backgroundColor", "#fff");
-    } else {
-      $(".nav-link").css("color", "#fff");
-      $(".navbar-toggler").css("color", "#fff");
-      $("#navbar").css("backgroundColor", "transparent");
-    }
-
-    if ($(window).scrollTop() > 30) {
-      $(".button-backtop").css("display", "block");
-    } else {
-      $(".button-backtop").css("display", "none");
-    }
-  }
-
-  handleScroll();
-
-  $(window).on("scroll resize load", handleScroll);
-
-  var counter = 1;
-  var audio = new Audio("/src/assets/sound/backsound.mp3");
-
-  audio.volume = 0.3;
-  audio.loop = true;
-
-  $(".backsound-btn").click(function () {
-    if (counter === 1) {
-      $("#backsound-ic").attr("class", "fa-solid fa-volume-high");
-      audio.play(); // Stop the sound
-      counter = 2;
-    } else {
-      $("#backsound-ic").attr("class", "fa-solid fa-volume-xmark");
-      audio.pause(); // Pause the sound
-      counter = 1;
-    }
-  });
-
-  $(".button-backtop").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      "smooth"
-    );
-  });
 
   // carousel
   var carouselContainer = $(".carousel-container");

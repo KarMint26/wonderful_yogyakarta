@@ -1,3 +1,5 @@
+injectNavbar("travel");
+
 const dataTravelsSleman = [
   {
     id: 1,
