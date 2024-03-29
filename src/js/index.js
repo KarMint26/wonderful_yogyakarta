@@ -1,7 +1,6 @@
+// set active navbar
+injectNavbar("home");
 $(document).ready(function () {
-  // set active navbar
-  injectNavbar("home");
-
   // Carousel Behavior
   let nextDom = $("#next");
   let prevDom = $("#prev");
