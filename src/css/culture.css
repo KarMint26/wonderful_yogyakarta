@@ -101,6 +101,17 @@ a.btn-primary {
   background-color: #4545451f;
 }
 
+.text-subtitle {
+  color: #e48e27;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.text-subtitle span {
+  color: black;
+}
+
 @media screen and (min-width: 768px) {
   section.hero h1 {
     font-size: 5rem;
