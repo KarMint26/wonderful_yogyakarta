@@ -240,7 +240,7 @@ function injectNavbar(menuActive) {
               <li class="nav-item">
                 <a class="nav-link ${
                   menuActive === "home" ? "active" : ""
-                }" href="/index.html">Homepage</a>
+                }" href="/">Homepage</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ${

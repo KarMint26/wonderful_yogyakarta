@@ -125,3 +125,22 @@ gsap.from(".testimoni-container", 1.2, {
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
+
+// Bento Grid
+gsap.from(".title-destination", 1, {
+  opacity: 0,
+  y: 200,
+  scrollTrigger: {
+    trigger: ".title-destination",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from(".bento-grid", 1.2, {
+  opacity: 0,
+  scale: 0,
+  scrollTrigger: {
+    trigger: ".bento-grid",
+    start: "top 80%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
