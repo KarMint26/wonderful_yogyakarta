@@ -980,7 +980,7 @@ html {
   width: 320px;
   height: 280px;
   display: flex;
-  gap: 0.75rem;
+  gap: 0.4rem;
   margin-top: 1rem;
 }
 
@@ -989,7 +989,7 @@ html {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
 .col-bento-right {
@@ -997,14 +997,14 @@ html {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
 .row-bento-column {
   flex: 1;
   display: flex;
   flex-direction: row;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
 .row-bento {
@@ -1103,6 +1103,19 @@ html {
   .bento-grid {
     width: 600px;
     height: 400px;
+    gap: 0.75rem;
+  }
+  
+  .col-bento-left {
+    gap: 0.75rem;
+  }
+  
+  .col-bento-right {
+    gap: 0.75rem;
+  }
+  
+  .row-bento-column {
+    gap: 0.75rem;
   }
 
   .row-bento .backside {
