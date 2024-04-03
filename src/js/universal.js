@@ -213,7 +213,7 @@ $("document").ready(function () {
 function injectNavbar(menuActive) {
   return $("#navbar").html(`
     <div class="container-fluid d-flex justify-content-start gap-5">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img class="jogja-icon" src="/src/assets/icon/icon.png" alt="icon" />
             </a>
             <button
