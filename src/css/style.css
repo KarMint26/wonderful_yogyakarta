@@ -1261,6 +1261,7 @@ html {
     margin: 3.5rem 0;
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: 3.5rem;
   }
 
   .hero-overview-culinary {
@@ -1509,15 +1510,87 @@ html {
 /* FAQ Section */
 #faq {
   padding: 2.5rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+#faq .faq-content .faq-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#faq .faq-content .faq-desc {
+  font-size: 0.9rem;
+}
+
+#faq .faq-content .faq-title span {
+  color: var(--primary);
+}
+
+#faq .accordion {
+  margin-top: 1rem;
+}
+
+#faq .accordion-button {
+  font-size: 0.9rem;
+}
+
+#faq .accordion-body {
+  font-size: 0.9rem;
+}
+
+#faq .faq-hero {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   #faq {
     padding: 3.5rem 3rem 3rem;
   }
+
+  #faq .faq-content .faq-title {
+    font-size: 2.5rem;
+  }
+  
+  #faq .faq-content .faq-desc {
+    font-size: 1.25rem;
+  }
+
+  #faq .accordion {
+    margin-top: 1.5rem;
+  }
+
+  #faq .accordion-button {
+    font-size: 1.1rem;
+  }
+  
+  #faq .accordion-body {
+    font-size: 1.1rem;
+  }
+
+  #faq .faq-hero {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #faq {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #faq .accordion-item {
+    width: 500px;
+  }
+
+  #faq .accordion {
+    margin-top: 2rem;
+  }
+
+  #faq .faq-hero {
+    width: 40%;
+    height: 40%;
   }
 }

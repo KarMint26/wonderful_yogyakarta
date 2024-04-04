@@ -112,6 +112,7 @@ gsap.from(".title-testimoni", 1.3, {
 gsap.from(".testimoni-container", 1.2, {
   opacity: 0,
   y: 100,
+  delay: 0.8,
   scrollTrigger: {
     trigger: ".testimoni-container",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -141,6 +142,7 @@ gsap.from(".bento-grid", 1.2, {
 gsap.from("#culture_overview", 1.1, {
   opacity: 0,
   y: 200,
+  delay: 0.3,
   scrollTrigger: {
     trigger: "#culture_overview",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -151,6 +153,7 @@ gsap.from("#culture_overview", 1.1, {
 gsap.from("#culinary_overview", 1.1, {
   opacity: 0,
   y: 200,
+  delay: 0.3,
   scrollTrigger: {
     trigger: "#culinary_overview",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -161,6 +164,7 @@ gsap.from("#culinary_overview", 1.1, {
 gsap.from(".title-sfg", 1.1, {
   opacity: 0,
   scale: 0,
+  delay: 0.5,
   scrollTrigger: {
     trigger: ".title-sfg",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -170,8 +174,47 @@ gsap.from(".title-sfg", 1.1, {
 gsap.from("#carouselSpecialtyFoodGifts", 1.2, {
   opacity: 0,
   y: 200,
+  delay: 0.3,
   scrollTrigger: {
     trigger: "#carouselSpecialtyFoodGifts",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// FAQ
+gsap.from(".faq-hero", 1.1, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: ".faq-hero",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+gsap.from(".faq-title", 1.2, {
+  opacity: 0,
+  x: -150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: ".faq-title",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+gsap.from(".faq-desc", 1.2, {
+  opacity: 0,
+  x: -150,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".faq-desc",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+gsap.from(".accordion", 1.2, {
+  opacity: 0,
+  x: -150,
+  delay: 1.2,
+  scrollTrigger: {
+    trigger: ".accordion",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
