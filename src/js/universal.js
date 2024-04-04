@@ -16,16 +16,16 @@ const contentFooter = `
     class="footer-thumb d-flex justify-content-center align-items-center w-100 ps-0 pb-4 border-bottom border-light"
     >
     <li>
-        <a href="#" class="foot-nav-list">HOMEPAGE</a>
+        <a href="/" class="foot-nav-list">HOMEPAGE</a>
     </li>
     <li>
-        <a href="#" class="foot-nav-list">CULTURE</a>
+        <a href="/src/pages/culture.html" class="foot-nav-list">CULTURE</a>
     </li>
     <li>
-        <a href="#" class="foot-nav-list">TRAVEL</a>
+        <a href="/src/pages/travel.html" class="foot-nav-list">TRAVEL</a>
     </li>
     <li>
-        <a href="#" class="foot-nav-list">CULINARY</a>
+        <a href="/src/pages/culinary.html" class="foot-nav-list">CULINARY</a>
     </li>
     </ul>
     <div

@@ -6,6 +6,7 @@
   --primary: #e48e27;
   --secondary: #e61c5d;
   --footerColor: #2c2c2c;
+  --bgSection: #fff0de;
   --fontPrimary: "Poppins", sans-serif;
 }
 
@@ -486,7 +487,7 @@ html {
 }
 
 #about .modal-btn-history {
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   background-color: var(--primary);
   border: none;
   outline: none;
@@ -964,6 +965,7 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #top_destination .title-destination h1 {
@@ -976,12 +978,22 @@ html {
   text-align: center;
 }
 
+#top_destination .title-destination a {
+  text-decoration: none;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateY(-0.5rem);
+}
+
 .bento-grid {
-  width: 320px;
+  width: 340px;
   height: 280px;
   display: flex;
   gap: 0.4rem;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .col-bento-left {
@@ -1013,7 +1025,7 @@ html {
   position: relative;
   flex: 1;
   border-radius: 1rem;
-  cursor: pointer;
+  cursor: all-scroll;
   transition: 800ms ease-in-out;
   transform-style: preserve-3d;
 }
@@ -1035,7 +1047,7 @@ html {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
-  filter: brightness(0.7) !important;
+  filter: brightness(0.8) !important;
 }
 
 .row-bento .backside {
@@ -1054,32 +1066,32 @@ html {
 
 /* Image bg for destination */
 #fside-1 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mlt.png');
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mlt.png");
   /* Merapi Lava Tour */
 }
 
 #fside-2 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mvm.png');
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mvm.png");
   /* Kaliurang */
 }
 
 #fside-3 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/b-pb.png');
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/b-pb.png");
   /* Parangtritis Beach */
 }
 
 #fside-4 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-wk.png');
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-gb.png");
   /* Kalibiru */
 }
 
 #fside-5 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-nt.png');
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-usm.png");
   /* Nglinggo Tea */
 }
 
 #fside-6 {
-  background: url('https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-k.png'); 
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-k.png");
   /* Merapi Volcano Museum */
 }
 
@@ -1100,20 +1112,25 @@ html {
     font-size: 1rem;
   }
 
+  #top_destination .title-destination a {
+    font-size: 1.25rem;
+    transform: translateY(0);
+  }
+
   .bento-grid {
-    width: 600px;
-    height: 400px;
+    width: 650px;
+    height: 450px;
     gap: 0.75rem;
   }
-  
+
   .col-bento-left {
     gap: 0.75rem;
   }
-  
+
   .col-bento-right {
     gap: 0.75rem;
   }
-  
+
   .row-bento-column {
     gap: 0.75rem;
   }
@@ -1138,10 +1155,162 @@ html {
 
   .bento-grid {
     width: 1200px;
-    height: 600px;
+    height: 750px;
   }
 
   .row-bento .backside {
     font-size: 1.25rem;
+  }
+}
+
+/* Culture Section Homepage */
+#culture_overview {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+#culture_overview .hero-overview-culture {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 0.8rem;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-wk.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#culture_overview .hero-overview-culture::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+#culture_overview .hero-overview-culture::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+
+#culture_overview .content-culture-overview {
+  display: flex;
+  flex-direction: column;
+}
+
+#culture_overview .content-culture-overview h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;  
+  font-weight: 600;
+}
+
+#culture_overview .content-culture-overview p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#culture_overview .content-culture-overview .btn-culture-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 0.65rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  transition: 300ms ease-in-out;
+}
+
+#culture_overview .content-culture-overview .btn-culture-overview:hover {
+  filter: brightness(0.95);
+}
+
+@media screen and (min-width: 768px) {
+  #culture_overview {
+    padding: 3.5rem 3rem 3rem;
+    margin: 2rem 0;
+  }
+  
+  #culture_overview .hero-overview-culture {
+    width: 100%;
+    height: 400px;
+  }
+
+  #culture_overview .content-culture-overview h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  #culture_overview .content-culture-overview p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #culture_overview .content-culture-overview .btn-culture-overview {
+    padding: 0.8rem 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  #culture_overview .hero-overview-culture::before {
+    width: 150px;
+    height: 150px;
+    top: -1.25rem;
+    left: -1.25rem;
+  }
+  #culture_overview .hero-overview-culture::after {
+    width: 150px;
+    height: 150px;
+    bottom: -1.25rem;
+    right: -1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #culture_overview {
+    margin: 3.5rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #culture_overview .hero-overview-culture {
+    width: 900px;
+    height: 650px;
+  }
+
+  #culture_overview .content-culture-overview {
+    width: 90%;
+  }
+
+  #culture_overview .content-culture-overview h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  #culture_overview .content-culture-overview p {
+    font-size: 1.3rem;
+    margin-bottom: 1.7rem;
   }
 }

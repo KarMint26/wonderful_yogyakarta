@@ -1,13 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".navbar-brand", 1, {
-  y: -100,
-  delay: 0.2,
-});
-gsap.from(".navbar-nav", 0.8, {
-  scale: 0,
-  delay: 0.3,
-});
 gsap.from(".top-text-head", 1.2, {
   opacity: 0,
   x: 50,
@@ -141,6 +133,16 @@ gsap.from(".bento-grid", 1.2, {
   scale: 0,
   scrollTrigger: {
     trigger: ".bento-grid",
-    start: "top 80%", // Mulai animasi saat elemen berada di tengah atas viewport
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// Culture Overview
+gsap.from("#culture_overview", 1.1, {
+  opacity: 0,
+  y: 200,
+  scrollTrigger: {
+    trigger: "#culture_overview",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
