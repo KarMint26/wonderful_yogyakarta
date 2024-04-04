@@ -557,74 +557,6 @@ html {
   }
 }
 
-/* Footer Styling */
-.footer-d {
-  background-color: var(--footerColor) !important;
-  padding: 0 3rem;
-}
-
-.footer-thumb {
-  list-style-type: none;
-  gap: 6rem;
-  margin-top: 1rem;
-}
-
-.foot-nav-list {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.copyright-d {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.social-media a {
-  color: #fff;
-}
-
-.social-media a i {
-  font-size: 1.25rem;
-  color: #fff;
-}
-
-@media screen and (min-width: 1024px) {
-  .footer-d {
-    padding: 0 5rem;
-  }
-  .footer-thumb {
-    list-style-type: none;
-    gap: 10rem;
-    margin-top: 1rem;
-  }
-  .social-media a i {
-    font-size: 1.5rem;
-  }
-}
-
-/* Footer mobile */
-.footer-m {
-  background-color: var(--footerColor);
-}
-
-.copyright-m {
-  color: #fff;
-  font-size: 0.75rem;
-}
-
-.list-nav-m a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.8rem;
-}
-
-.social-media-m a {
-  color: #fff;
-  font-size: 1.2rem;
-}
-
 /* Hotels Section */
 #hotels {
   background-color: var(--footerColor);
@@ -1593,4 +1525,72 @@ html {
     width: 40%;
     height: 40%;
   }
+}
+
+/* Footer Styling */
+.footer-d {
+  background-color: var(--footerColor) !important;
+  padding: 0 3rem;
+}
+
+.footer-thumb {
+  list-style-type: none;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+
+.foot-nav-list {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.copyright-d {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+.social-media a i {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-d {
+    padding: 0 5rem;
+  }
+  .footer-thumb {
+    list-style-type: none;
+    gap: 10rem;
+    margin-top: 1rem;
+  }
+  .social-media a i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Footer mobile */
+.footer-m {
+  background-color: var(--footerColor);
+}
+
+.copyright-m {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.list-nav-m a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.social-media-m a {
+  color: #fff;
+  font-size: 1.2rem;
 }
