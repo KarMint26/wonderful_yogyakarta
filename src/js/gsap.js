@@ -133,7 +133,7 @@ gsap.from(".bento-grid", 1.2, {
   scale: 0,
   scrollTrigger: {
     trigger: ".bento-grid",
-    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+    start: "top 80%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
 
@@ -143,6 +143,35 @@ gsap.from("#culture_overview", 1.1, {
   y: 200,
   scrollTrigger: {
     trigger: "#culture_overview",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// Culinary Overview
+gsap.from("#culinary_overview", 1.1, {
+  opacity: 0,
+  y: 200,
+  scrollTrigger: {
+    trigger: "#culinary_overview",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// SFG
+gsap.from(".title-sfg", 1.1, {
+  opacity: 0,
+  scale: 0,
+  scrollTrigger: {
+    trigger: ".title-sfg",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#carouselSpecialtyFoodGifts", 1.2, {
+  opacity: 0,
+  y: 200,
+  scrollTrigger: {
+    trigger: "#carouselSpecialtyFoodGifts",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });

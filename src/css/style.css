@@ -469,7 +469,7 @@ html {
 
 /* About / Introduce Yogyakarta Page */
 #about h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -494,7 +494,7 @@ html {
   font-weight: 600;
   color: white;
   font-size: 0.85rem;
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +531,7 @@ html {
   }
   #about .modal-btn-history {
     font-size: 1rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.85rem 1.5rem;
   }
   .thumb-history {
     height: 350px;
@@ -824,6 +824,562 @@ html {
   }
 }
 
+/* Top Destination */
+#top_destination {
+  padding: 2.5rem 2rem 2rem;
+}
+
+#top_destination .title-destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#top_destination .title-destination h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#top_destination .title-destination p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#top_destination .title-destination a {
+  text-decoration: none;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateY(-0.5rem);
+}
+
+.bento-grid {
+  width: 340px;
+  height: 280px;
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 1.2rem;
+}
+
+.col-bento-left {
+  flex: 2;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.col-bento-right {
+  flex: 1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.row-bento-column {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.row-bento {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex: 1;
+  border-radius: 0.5rem;
+  cursor: all-scroll;
+  transition: 800ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.row-bento:hover {
+  transform: rotateY(180deg);
+}
+
+.row-bento .backside,
+.row-bento .frontside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden !important;
+  border-radius: 0.5rem;
+}
+
+.row-bento .frontside {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: brightness(0.8) !important;
+}
+
+.row-bento .backside {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.65rem;
+  transform: rotateY(180deg);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Image bg for destination */
+#fside-1 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mlt.png");
+  /* Merapi Lava Tour */
+}
+
+#fside-2 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mvm.png");
+  /* Kaliurang */
+}
+
+#fside-3 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/b-pb.png");
+  /* Parangtritis Beach */
+}
+
+#fside-4 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-gb.png");
+  /* Kalibiru */
+}
+
+#fside-5 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-usm.png");
+  /* Nglinggo Tea */
+}
+
+#fside-6 {
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-k.png");
+  /* Merapi Volcano Museum */
+}
+
+@media screen and (min-width: 768px) {
+  #top_destination {
+    padding: 3.5rem 3rem 3rem;
+  }
+
+  #top_destination .title-destination {
+    margin-bottom: 1.5rem;
+  }
+
+  #top_destination .title-destination h1 {
+    font-size: 2.5rem;
+  }
+
+  #top_destination .title-destination p {
+    font-size: 1.2rem;
+  }
+
+  #top_destination .title-destination a {
+    font-size: 1.25rem;
+    transform: translateY(0);
+  }
+
+  .bento-grid {
+    width: 650px;
+    height: 450px;
+    gap: 0.75rem;
+  }
+
+  .row-bento {
+    border-radius: 1rem;
+  }
+
+  .col-bento-left {
+    gap: 0.75rem;
+  }
+
+  .col-bento-right {
+    gap: 0.75rem;
+  }
+
+  .row-bento-column {
+    gap: 0.75rem;
+  }
+
+  .row-bento .frontside,
+  .row-bento .backside {
+    border-radius: 1rem;
+  }
+
+  .row-bento .backside {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #top_destination {
+    padding: 3.5rem 3rem 3rem;
+  }
+
+  #top_destination .title-destination h1 {
+    font-size: 3rem;
+  }
+
+  #top_destination .title-destination p {
+    font-size: 1.3rem;
+  }
+
+  .bento-grid {
+    width: 1200px;
+    height: 750px;
+  }
+
+  .row-bento .backside {
+    font-size: 1.25rem;
+  }
+}
+
+/* Culture Section Homepage and Utility Class */
+#culture_overview {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.hero-overview-culture {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 0.8rem;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-wk.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overview-culture::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+.hero-overview-culture::after {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  right: -0.8rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+.content-custom-overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-custom-overview h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.content-custom-overview p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.content-custom-overview .btn-custom-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 0.65rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  transition: 300ms ease-in-out;
+}
+
+.content-custom-overview .btn-custom-overview:hover {
+  filter: brightness(0.95);
+}
+
+@media screen and (min-width: 768px) {
+  #culture_overview {
+    padding: 3.5rem 3rem 3rem;
+    margin: 2rem 0;
+    gap: 1.5rem;
+  }
+
+  .hero-overview-culture {
+    width: 100%;
+    height: 400px;
+  }
+
+  .content-custom-overview h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .content-custom-overview p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-custom-overview .btn-custom-overview {
+    padding: 0.8rem 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  .hero-overview-culture::before {
+    width: 150px;
+    height: 150px;
+    top: -1.25rem;
+    left: -1.25rem;
+  }
+  .hero-overview-culture::after {
+    width: 150px;
+    height: 150px;
+    bottom: -1.25rem;
+    right: -1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #culture_overview {
+    margin: 3.5rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-overview-culture {
+    width: 900px;
+    height: 650px;
+  }
+
+  .content-custom-overview {
+    width: 90%;
+  }
+
+  .content-custom-overview h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .content-custom-overview p {
+    font-size: 1.3rem;
+    margin-bottom: 1.7rem;
+  }
+}
+
+/* Culinary Section Homepage */
+#culinary_overview {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.hero-overview-culinary {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 6rem 0.5rem 6rem 0.5rem;
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/homepage/culinary.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overview-culinary::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  right: -0.8rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+.hero-overview-culinary::after {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  left: -0.8rem;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+  #culinary_overview {
+    padding: 3.5rem 3rem 3rem;
+    margin: 2rem 0;
+    gap: 1.5rem;
+  }
+
+  .hero-overview-culinary {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #culinary_overview {
+    margin: 3.5rem 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hero-overview-culinary {
+    width: 900px;
+    height: 550px;
+  }
+}
+
+/* SFG Section */
+#sfg {
+  margin: 1.5rem 0;
+  width: 100%;
+  height: fit-content;
+}
+
+#sfg .title-sfg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#sfg .title-sfg h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#sfg .title-sfg p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#sfg .carousel {
+  width: 100%;
+  height: 250px;
+}
+
+#sfg .img-carousel-sfg {
+  width: 100%;
+  height: 250px;
+  filter: brightness(0.6);
+}
+
+#sfg .carousel-caption h5 {
+  font-size: 1rem;
+}
+
+#sfg .carousel-caption p {
+  font-size: 0.65rem;
+}
+
+@media screen and (min-width: 768px) {
+  #sfg {
+    margin: 2rem 0;
+  }
+
+  #sfg .title-sfg {
+    margin-bottom: 1.5rem;
+    padding: 0 4rem;
+  }
+
+  #sfg .title-sfg h1 {
+    font-size: 2.5rem;
+  }
+
+  #sfg .title-sfg p {
+    font-size: 1.2rem;
+  }
+
+  #sfg .carousel {
+    height: 400px;
+  }
+
+  #sfg .img-carousel-sfg {
+    height: 400px;
+  }
+
+  #sfg .carousel-caption h5 {
+    font-size: 1.8rem;
+  }
+
+  #sfg .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #sfg {
+    margin: 3.5rem 0;
+  }
+
+  #sfg .title-sfg h1 {
+    font-size: 3rem;
+  }
+
+  #sfg .title-sfg p {
+    font-size: 1.3rem;
+  }
+
+  #sfg .carousel {
+    height: 700px;
+  }
+
+  #sfg .img-carousel-sfg {
+    height: 700px;
+  }
+
+  #sfg .carousel-caption h5 {
+    font-size: 2.5rem;
+  }
+
+  #sfg .carousel-caption p {
+    font-size: 1.3rem;
+  }
+}
+
 /* Testimoni */
 #testimoni {
   padding: 2.5rem 2rem 2rem;
@@ -936,10 +1492,6 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  #testimoni {
-    padding: 3.5rem 3rem 3rem;
-  }
-
   #testimoni .title-testimoni h1 {
     font-size: 3rem;
   }
@@ -954,363 +1506,18 @@ html {
   }
 }
 
-/* Top Destination */
-#top_destination {
+/* FAQ Section */
+#faq {
   padding: 2.5rem 2rem 2rem;
 }
 
-#top_destination .title-destination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-#top_destination .title-destination h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
-#top_destination .title-destination p {
-  font-size: 0.85rem;
-  text-align: center;
-}
-
-#top_destination .title-destination a {
-  text-decoration: none;
-  color: var(--primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  transform: translateY(-0.5rem);
-}
-
-.bento-grid {
-  width: 340px;
-  height: 280px;
-  display: flex;
-  gap: 0.4rem;
-  margin-top: 1.2rem;
-}
-
-.col-bento-left {
-  flex: 2;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.col-bento-right {
-  flex: 1;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.row-bento-column {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  gap: 0.4rem;
-}
-
-.row-bento {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  flex: 1;
-  border-radius: 1rem;
-  cursor: all-scroll;
-  transition: 800ms ease-in-out;
-  transform-style: preserve-3d;
-}
-
-.row-bento:hover {
-  transform: rotateY(180deg);
-}
-
-.row-bento .backside,
-.row-bento .frontside {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden !important;
-  border-radius: 1rem;
-}
-
-.row-bento .frontside {
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
-  filter: brightness(0.8) !important;
-}
-
-.row-bento .backside {
-  background-color: #3e3e3e;
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  font-size: 0.65rem;
-  transform: rotateY(180deg);
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* Image bg for destination */
-#fside-1 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mlt.png");
-  /* Merapi Lava Tour */
-}
-
-#fside-2 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-mvm.png");
-  /* Kaliurang */
-}
-
-#fside-3 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/b-pb.png");
-  /* Parangtritis Beach */
-}
-
-#fside-4 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/k-gb.png");
-  /* Kalibiru */
-}
-
-#fside-5 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-usm.png");
-  /* Nglinggo Tea */
-}
-
-#fside-6 {
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/travel/s-k.png");
-  /* Merapi Volcano Museum */
-}
-
 @media screen and (min-width: 768px) {
-  #top_destination {
+  #faq {
     padding: 3.5rem 3rem 3rem;
-  }
-
-  #top_destination .title-destination {
-    margin-bottom: 1.5rem;
-  }
-
-  #top_destination .title-destination h1 {
-    font-size: 2.5rem;
-  }
-
-  #top_destination .title-destination p {
-    font-size: 1rem;
-  }
-
-  #top_destination .title-destination a {
-    font-size: 1.25rem;
-    transform: translateY(0);
-  }
-
-  .bento-grid {
-    width: 650px;
-    height: 450px;
-    gap: 0.75rem;
-  }
-
-  .col-bento-left {
-    gap: 0.75rem;
-  }
-
-  .col-bento-right {
-    gap: 0.75rem;
-  }
-
-  .row-bento-column {
-    gap: 0.75rem;
-  }
-
-  .row-bento .backside {
-    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #top_destination {
-    padding: 3.5rem 3rem 3rem;
-  }
-
-  #top_destination .title-destination h1 {
-    font-size: 3rem;
-  }
-
-  #top_destination .title-destination p {
-    font-size: 1.15rem;
-  }
-
-  .bento-grid {
-    width: 1200px;
-    height: 750px;
-  }
-
-  .row-bento .backside {
-    font-size: 1.25rem;
-  }
-}
-
-/* Culture Section Homepage */
-#culture_overview {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  padding: 2.5rem 2rem 2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 1rem;
-  margin: 1.25rem 0;
-}
-
-#culture_overview .hero-overview-culture {
-  position: relative;
-  width: 100%;
-  height: 280px;
-  border-radius: 0.8rem;
-  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-wk.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#culture_overview .hero-overview-culture::before {
-  content: "";
-  position: absolute;
-  top: -1rem;
-  left: -1rem;
-  width: 120px;
-  height: 120px;
-  z-index: -1;
-  border-radius: 0.5rem;
-  background-color: var(--primary);
-}
-
-#culture_overview .hero-overview-culture::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  right: -1rem;
-  width: 120px;
-  height: 120px;
-  z-index: -1;
-  border-radius: 0.5rem;
-  background-color: var(--primary);
-}
-
-
-#culture_overview .content-culture-overview {
-  display: flex;
-  flex-direction: column;
-}
-
-#culture_overview .content-culture-overview h1 {
-  font-size: 1.5rem;
-  margin-top: 1rem;  
-  font-weight: 600;
-}
-
-#culture_overview .content-culture-overview p {
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-#culture_overview .content-culture-overview .btn-culture-overview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: #fff;
-  background-color: var(--primary);
-  padding: 0.65rem 1rem;
-  border-radius: 0.4rem;
-  font-size: 0.9rem;
-  align-self: flex-start;
-  transition: 300ms ease-in-out;
-}
-
-#culture_overview .content-culture-overview .btn-culture-overview:hover {
-  filter: brightness(0.95);
-}
-
-@media screen and (min-width: 768px) {
-  #culture_overview {
-    padding: 3.5rem 3rem 3rem;
-    margin: 2rem 0;
-  }
-  
-  #culture_overview .hero-overview-culture {
-    width: 100%;
-    height: 400px;
-  }
-
-  #culture_overview .content-culture-overview h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-  
-  #culture_overview .content-culture-overview p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  #culture_overview .content-culture-overview .btn-culture-overview {
-    padding: 0.8rem 1.25rem;
-    font-size: 1.35rem;
-  }
-
-  #culture_overview .hero-overview-culture::before {
-    width: 150px;
-    height: 150px;
-    top: -1.25rem;
-    left: -1.25rem;
-  }
-  #culture_overview .hero-overview-culture::after {
-    width: 150px;
-    height: 150px;
-    bottom: -1.25rem;
-    right: -1.25rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #culture_overview {
-    margin: 3.5rem 0;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #culture_overview .hero-overview-culture {
-    width: 900px;
-    height: 650px;
-  }
-
-  #culture_overview .content-culture-overview {
-    width: 90%;
-  }
-
-  #culture_overview .content-culture-overview h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
-  }
-  
-  #culture_overview .content-culture-overview p {
-    font-size: 1.3rem;
-    margin-bottom: 1.7rem;
+  #faq {
   }
 }
