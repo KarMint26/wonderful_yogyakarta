@@ -141,7 +141,7 @@ const renderCard = (listData, container) =>
     let card;
     if (!(data.id % 2 === 0)) {
       card = `
-        <div class="card card-travel rounded-4 p-3">
+        <div class="card card-travel rounded-4 p-3" id="card-${data.id}">
             <div class="card-travel-body d-flex flex-column flex-lg-row gap-3">
               <div class="img-container">
                 <img src=${data.image} alt=${
@@ -193,7 +193,9 @@ const renderCard = (listData, container) =>
           </div>
         `;
     } else {
-      card = `<div class="card card-travel card-travel-second rounded-4 p-3">
+      card = `<div class="card card-travel card-travel-second rounded-4 p-3" id="card-${
+        data.id
+      }">
         <div class="card-travel-body d-flex flex-column-reverse flex-lg-row gap-3">
           <div class="card-desc d-flex flex-column">
             <h1 class="mt-2 card-left-p">${data.title}</h1>

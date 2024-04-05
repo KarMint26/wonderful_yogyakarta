@@ -165,6 +165,18 @@ gsap.from("section.hero a.btn-primary", 1.4, {
   y: 250,
   opacity: 0,
 });
+dataCultureArts.forEach(({ id }) => {
+  gsap.from("#card-" + id, 1.2, {
+    y: 200,
+    delay: 0.5,
+  });
+});
+dataHeritageBuildings.forEach(({ id }) => {
+  gsap.from("#card-" + id, 1.4, {
+    y: 200,
+    delay: 0.5,
+  });
+});
 
 gsap.from(".title-testimoni", 1.3, {
   opacity: 0,
