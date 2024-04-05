@@ -193,7 +193,7 @@ const renderCard = (listData, container) =>
                 <div class="desc-info"><i class="bi bi-clock-fill"></i><span>${data.time}</span></div>
                 <div class="desc-info"><i class="bi bi-cash"></i><span>± ${data.price}</span></div>
                 <div class="desc-info" style="margin-bottom: 1rem;"><i class="bi bi-geo-alt-fill"></i><span>${data.location}</span></div>
-                <a href=${data.maps} target="_blank" class="btn-primary" style="width: 10.5rem;"> <i class="bi bi-eye-fill h6" style="margin-right: .5rem;"></i> Visit Now</a>
+                <a href=${data.maps} target="_blank" class="btn-visit"> <i class="bi bi-eye-fill"></i> Visit Now</a>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ const renderCard = (listData, container) =>
             <div class="desc-info card-left-p"><i class="bi bi-clock-fill"></i><span>${data.time}</span></div>
             <div class="desc-info card-left-p"><i class="bi bi-cash"></i><span>± ${data.price}</span></div>
             <div class="desc-info card-left-p" style="margin-bottom: 1rem;"><i class="bi bi-geo-alt-fill"></i><span> ${data.location} </span></div>
-            <a href=${data.maps} target="_blank" class="btn-primary card-left-p" style="width: 10.5rem;"> <i class="bi bi-eye-fill h6" style="margin-right: .5rem;"></i> Visit Now</a>
+            <a href=${data.maps} target="_blank" class="btn-visit"> <i class="bi bi-eye-fill"></i> Visit Now</a>
           </div>
           <div class="img-container">
             <img src=${data.image} alt=${data.title} class="object-fit-cover" style="width: 100%; height: 100%;" />

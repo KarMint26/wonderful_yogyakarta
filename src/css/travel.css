@@ -71,6 +71,27 @@ p.title-desc {
   border-radius: 1rem;
 }
 
+.btn-visit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  padding: 0.7rem 1.5rem;
+  filter: none;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  gap: 0.6rem;
+}
+
+.btn-visit i {
+  font-size: 1.25rem;
+}
+
 .desc-info {
   display: flex;
   gap: 0.8rem;
