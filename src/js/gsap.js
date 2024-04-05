@@ -62,7 +62,7 @@ gsap.from(".decor", 1.3, {
   scale: 0,
   delay: 0.5,
   scrollTrigger: {
-    trigger: ".modal-btn-history",
+    trigger: ".title-wy",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
