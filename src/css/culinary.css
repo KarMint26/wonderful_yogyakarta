@@ -15,6 +15,7 @@
     url("https://db.onlinewebfonts.com/t/bdffeaca019f2dc4e584d651948d86a0.svg#jsMath-cmti10")
       format("svg");
 }
+
 section.hero {
   position: relative;
   width: 100%;
@@ -32,7 +33,7 @@ section .hero-img {
   top: 0;
   left: 0;
   right: 0;
-  background: url("/src/assets/image/travel/bg-travel.png");
+  background: url("https://techtitans.sirv.com/wonderful-yogyakarta/culinary/hero-culinary.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,52 +72,12 @@ p.title-desc {
   border-radius: 1rem;
 }
 
-.desc-info {
-  display: flex;
-  gap: 0.8rem;
-  color: #727272;
-  margin-bottom: 0.5rem;
-}
-
-.card-travel {
-  margin-bottom: 1.5rem;
-}
-
-.card-desc {
-  width: 100%;
-}
-
-.card-travel .img-container {
-  height: 15rem;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 2rem !important;
-}
-
-.card-travel .img-container img {
-  border-radius: 1.5rem !important;
-}
-
-.card-travel-second {
-  background-color: #4545451f;
-}
-
 @media screen and (min-width: 768px) {
   section.hero h1 {
     font-size: 5rem;
   }
   p.title-desc {
     font-size: 1.2rem;
-  }
-  .card.card-travel {
-    display: flex;
-    flex-direction: column !important;
-  }
-  .card-travel .img-container {
-    height: 22rem;
-  }
-  .card-left-p {
-    padding-left: 0.6rem;
   }
 }
 
@@ -127,13 +88,5 @@ p.title-desc {
   }
   p.title-desc {
     font-size: 1.4rem;
-  }
-
-  .card-desc {
-    width: 50%;
-  }
-  .card-travel .img-container {
-    width: 50% !important;
-    padding: 1rem;
   }
 }

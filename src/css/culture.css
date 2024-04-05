@@ -16,16 +16,6 @@
       format("svg");
 }
 
-/* Global Styling and CSS Variable */
-/* :root {
-  --primary: #e48e27;
-  --secondary: #e61c5d;
-  --footerColor: #2c2c2c;
-  --bgLight: #f1d8bb;
-  --colorSubPrimary: #9d5600;
-  --fontPrimary: "Poppins", sans-serif;
-} */
-
 section.hero {
   position: relative;
   width: 100%;
