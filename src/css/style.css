@@ -6,7 +6,8 @@
   --primary: #e48e27;
   --secondary: #e61c5d;
   --footerColor: #2c2c2c;
-  --bgSection: #fff0de;
+  --bgLight: #f1d8bb;
+  --colorSubPrimary: #9d5600;
   --fontPrimary: "Poppins", sans-serif;
 }
 
@@ -522,6 +523,10 @@ html {
   font-size: 0.8rem;
 }
 
+.bot-text-head {
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   #about h1 {
     font-size: 2rem;
@@ -554,6 +559,185 @@ html {
     height: 400px;
     margin-bottom: 1.25rem;
     background-position-y: -80px;
+  }
+}
+
+/* Why Yogyakarta Section */
+#why_yogyakarta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--bgLight);
+  margin-top: 1rem;
+}
+
+#why_yogyakarta .decor {
+  width: 80px;
+  position: absolute;
+}
+
+#why_yogyakarta .decor:nth-child(1) {
+  left: 0.4rem;
+  bottom: -0.4rem;
+}
+
+#why_yogyakarta .decor:nth-child(2) {
+  right: 0.4rem;
+  bottom: -0.4rem;
+  transform: rotateY(180deg);
+}
+
+#why_yogyakarta .decor:nth-child(3) {
+  right: 0.4rem;
+  top: -0.4rem;
+  transform: rotateY(180deg) rotateX(180deg);
+}
+
+#why_yogyakarta .decor:nth-child(4) {
+  left: 0.4rem;
+  top: -0.4rem;
+  transform: rotateY(360deg) rotateX(180deg);
+}
+
+#why_yogyakarta .box-wy {
+  padding: 3rem 2rem 2rem;
+}
+
+#why_yogyakarta .box-wy .title-wy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#why_yogyakarta .box-wy .content-wy {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#why_yogyakarta .box-wy .content-wy img {
+  width: 100%;
+}
+
+#why_yogyakarta .box-wy .content-wy .list-wy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#why_yogyakarta .box-wy .content-wy .point-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#why_yogyakarta .box-wy .content-wy .point-list .icon-box i {
+  width: 50px;
+  height: 50px;
+  background-color: var(--colorSubPrimary);
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 100%;
+}
+
+#why_yogyakarta
+  .box-wy
+  .content-wy
+  .point-list
+  .text-content
+  .title-point-list {
+  color: var(--colorSubPrimary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#why_yogyakarta .box-wy .content-wy .point-list .text-content p {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #why_yogyakarta .decor {
+    width: 130px;
+  }
+
+  #why_yogyakarta .box-wy .title-wy {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy {
+    padding: 0 2rem 1rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy .point-list {
+    gap: 1.2rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy .point-list .icon-box i {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  #why_yogyakarta
+    .box-wy
+    .content-wy
+    .point-list
+    .text-content
+    .title-point-list {
+    font-size: 1.3rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy .point-list .text-content p {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #why_yogyakarta .decor {
+    width: 150px;
+  }
+
+  #why_yogyakarta .box-wy {
+    padding: 3rem;
+  }
+
+  #why_yogyakarta .box-wy .title-wy {
+    font-size: 2.5rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy {
+    flex-direction: row;
+  }
+
+  #why_yogyakarta .box-wy .content-wy img {
+    width: 60%;
+  }
+
+  #why_yogyakarta
+    .box-wy
+    .content-wy
+    .point-list
+    .text-content
+    .title-point-list {
+    font-size: 1.5rem;
+  }
+
+  #why_yogyakarta .box-wy .content-wy .point-list .text-content p {
+    font-size: 1.15rem;
   }
 }
 
@@ -1488,7 +1672,7 @@ html {
   #faq .faq-content .faq-title {
     font-size: 2.5rem;
   }
-  
+
   #faq .faq-content .faq-desc {
     font-size: 1.25rem;
   }
@@ -1500,7 +1684,7 @@ html {
   #faq .accordion-button {
     font-size: 1.1rem;
   }
-  
+
   #faq .accordion-body {
     font-size: 1.1rem;
   }

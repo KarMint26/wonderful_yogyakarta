@@ -1,8 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// About Section
 gsap.from(".top-text-head", 1.2, {
   opacity: 0,
   x: 50,
+  delay: 0.5,
   scrollTrigger: {
     trigger: ".top-text-head",
     start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -10,17 +12,19 @@ gsap.from(".top-text-head", 1.2, {
 });
 gsap.from(".bot-text-head", 1.2, {
   opacity: 0,
-  x: -50,
+  x: 50,
+  delay: 0.8,
   scrollTrigger: {
-    trigger: ".bot-text-head",
+    trigger: ".top-text-head",
     start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
 gsap.from(".desc-about", 1.2, {
   opacity: 0,
   x: 50,
+  delay: 1,
   scrollTrigger: {
-    trigger: ".desc-about",
+    trigger: ".top-text-head",
     start: "top 50%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
@@ -35,8 +39,70 @@ gsap.from(".img-maps", 1.4, {
 gsap.from(".modal-btn-history", 1.2, {
   opacity: 0,
   scale: 0,
+  delay: 1.1,
+  scrollTrigger: {
+    trigger: ".desc-about",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// Why Yogyakarta Section
+gsap.from(".title-wy", 1.1, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: ".title-wy",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from(".decor", 1.3, {
+  opacity: 0,
+  scale: 0,
+  delay: 0.5,
   scrollTrigger: {
     trigger: ".modal-btn-history",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from(".why-yogyakarta-hero", 1.1, {
+  opacity: 0,
+  y: 150,
+  delay: 1,
+  scrollTrigger: {
+    trigger: ".why-yogyakarta-hero",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#point-list-1", 1.1, {
+  opacity: 0,
+  x: -150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#point-list-1",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#point-list-2", 1.1, {
+  opacity: 0,
+  x: -150,
+  delay: 0.8,
+  scrollTrigger: {
+    trigger: "#point-list-1",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#point-list-3", 1.1, {
+  opacity: 0,
+  x: -150,
+  delay: 1.1,
+  scrollTrigger: {
+    trigger: "#point-list-1",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
@@ -123,6 +189,7 @@ gsap.from(".testimoni-container", 1.2, {
 gsap.from(".title-destination", 1, {
   opacity: 0,
   y: 200,
+  delay: 0.3,
   scrollTrigger: {
     trigger: ".title-destination",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
@@ -132,8 +199,9 @@ gsap.from(".title-destination", 1, {
 gsap.from(".bento-grid", 1.2, {
   opacity: 0,
   scale: 0,
+  delay: 0.5,
   scrollTrigger: {
-    trigger: ".bento-grid",
+    trigger: ".title-destination",
     start: "top 80%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
@@ -174,9 +242,9 @@ gsap.from(".title-ss", 1.1, {
 gsap.from("#carouselSpecialtySnacks", 1.2, {
   opacity: 0,
   y: 200,
-  delay: 0.3,
+  delay: 0.5,
   scrollTrigger: {
-    trigger: "#carouselSpecialtyFoodGifts",
+    trigger: ".title-ss",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
@@ -205,7 +273,7 @@ gsap.from(".faq-desc", 1.2, {
   x: -150,
   delay: 1,
   scrollTrigger: {
-    trigger: ".faq-desc",
+    trigger: ".faq-title",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
@@ -214,7 +282,7 @@ gsap.from(".accordion", 1.2, {
   x: -150,
   delay: 1.2,
   scrollTrigger: {
-    trigger: ".accordion",
+    trigger: ".faq-title",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
