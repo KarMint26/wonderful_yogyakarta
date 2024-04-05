@@ -153,15 +153,15 @@ gsap.from(".carousel-container", 1.2, {
   },
 });
 
-// Travel Section
+// Travel, culture, culinary Section
 gsap.from("section.hero h1", 1, {
-  y: 200,
+  y: -200,
 });
 gsap.from("section.hero p.title-desc", 1.2, {
   y: 220,
   opacity: 0,
 });
-gsap.from("section.hero a.btn-primary", 1.8, {
+gsap.from("section.hero a.btn-primary", 1.4, {
   y: 250,
   opacity: 0,
 });

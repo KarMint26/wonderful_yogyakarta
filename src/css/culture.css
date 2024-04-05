@@ -59,16 +59,40 @@ p.title-desc {
   text-shadow: 0 10px 5px 10px #0004;
 }
 
-a.btn-primary {
+.btn-primary,
+.btn-secondary {
   display: inline-block;
   padding: 0.8rem 2rem;
+  width: 13rem;
   filter: none;
-  background-color: #e48e27;
-  text-decoration: none;
-  color: white;
   text-align: center;
   font-weight: 600;
   border-radius: 1rem;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: #e48e27;
+  text-decoration: none;
+  color: white;
+  border: none;
+  gap: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: 13rem;
+  background: #727272;
+  border-radius: 1rem;
+}
+
+.btn-secondary {
+  background-color: white;
+  text-decoration: none;
+  color: #e48e27;
+  border: 2px solid #e48e27;
+  gap: 1rem;
 }
 
 .desc-info {
@@ -119,6 +143,10 @@ a.btn-primary {
   p.title-desc {
     font-size: 1.2rem;
   }
+
+  iframe {
+    height: 17rem;
+  }
   .card.card-travel {
     display: flex;
     flex-direction: column !important;
@@ -129,12 +157,21 @@ a.btn-primary {
   .card-left-p {
     padding-left: 0.6rem;
   }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   section.hero h1 {
     font-size: 10rem;
     line-height: 8rem;
+  }
+
+  iframe {
+    height: 27rem;
   }
   p.title-desc {
     font-size: 1.4rem;
