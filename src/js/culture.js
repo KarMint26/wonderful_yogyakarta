@@ -160,13 +160,13 @@ const renderCard = (listData, container) =>
                   data.location
                 }</span></div>
                 <div class="d-flex gap-3">
-                  <button class="btn-primary" data-bs-toggle="modal" data-bs-target='#${
+                  <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#${
                     data.maps
                   }'
-                  ><i class="fa-solid fa-video" style="margin-right: .5rem"></i> Watch Video</button>
-                  <a href=${
+                  ><i class="fa-solid fa-video"></i> Watch Video</button>
+                  <button onClick='window.open("${
                     data.maps
-                  } target="_blank" class="btn-secondary card-left-p" > <i class="bi bi-map-fill h6" style="margin-right: .5rem;"></i> See Map</a>
+                  }")' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
                 </div>
               </div>
             </div>
@@ -211,14 +211,14 @@ const renderCard = (listData, container) =>
               data.location
             } </span></div>
             <div class="d-flex gap-3">
-                  <button class="btn-primary" data-bs-toggle="modal" data-bs-target='#${
-                    data.maps
-                  }'
-                  ><i class="fa-solid fa-video" style="margin-right: .5rem"></i> Watch Video</button>
-                  <a href=${
-                    data.maps
-                  } target="_blank" class="btn-secondary card-left-p" > <i class="bi bi-map-fill h6" style="margin-right: .5rem;"></i> See Map</a>
-                </div>
+              <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#${
+                data.maps
+              }'
+              ><i class="fa-solid fa-video"></i> Watch Video</button>
+              <button onClick='window.open("${
+                data.maps
+              }")' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
+            </div>
           </div>
           <div class="img-container">
             <img src=${data.image} alt=${

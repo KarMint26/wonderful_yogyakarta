@@ -15,6 +15,17 @@
     url("https://db.onlinewebfonts.com/t/bdffeaca019f2dc4e584d651948d86a0.svg#jsMath-cmti10")
       format("svg");
 }
+
+/* Global Styling and CSS Variable */
+/* :root {
+  --primary: #e48e27;
+  --secondary: #e61c5d;
+  --footerColor: #2c2c2c;
+  --bgLight: #f1d8bb;
+  --colorSubPrimary: #9d5600;
+  --fontPrimary: "Poppins", sans-serif;
+} */
+
 section.hero {
   position: relative;
   width: 100%;
@@ -59,25 +70,51 @@ p.title-desc {
   text-shadow: 0 10px 5px 10px #0004;
 }
 
-.btn-primary,
-.btn-secondary {
+.btn-explore {
   display: inline-block;
   padding: 0.8rem 2rem;
-  width: 13rem;
   filter: none;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
   text-align: center;
   font-weight: 600;
   border-radius: 1rem;
-  outline: none;
-  font-size: 0.8rem;
+}
+
+.btn-card {
+  outline: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.3rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  border: 2px solid var(--primary);
+  transition: 300ms ease-in-out;
+  gap: 0.75rem;
 }
 
 .btn-primary {
-  background-color: #e48e27;
-  text-decoration: none;
-  color: white;
-  border: none;
-  gap: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: #fff;
 }
 
 iframe {
@@ -85,14 +122,6 @@ iframe {
   height: 13rem;
   background: #727272;
   border-radius: 1rem;
-}
-
-.btn-secondary {
-  background-color: white;
-  text-decoration: none;
-  color: #e48e27;
-  border: 2px solid #e48e27;
-  gap: 1rem;
 }
 
 .desc-info {
@@ -126,7 +155,7 @@ iframe {
 }
 
 .text-subtitle {
-  color: #e48e27;
+  color: var(--primary);
   margin-bottom: 2rem;
   margin-top: 4rem;
   padding: 1rem;
@@ -156,6 +185,12 @@ iframe {
   }
   .card-left-p {
     padding-left: 0.6rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    gap: 1rem;
+    font-size: 1rem;
   }
 
   .btn-primary,

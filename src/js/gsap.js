@@ -155,27 +155,15 @@ gsap.from(".carousel-container", 1.2, {
 
 // Travel, culture, culinary Section
 gsap.from("section.hero h1", 1, {
-  y: -200,
+  y: 200,
 });
 gsap.from("section.hero p.title-desc", 1.2, {
   y: 220,
   opacity: 0,
 });
-gsap.from("section.hero a.btn-primary", 1.4, {
+gsap.from("section.hero a.btn-explore", 1.4, {
   y: 250,
   opacity: 0,
-});
-dataCultureArts.forEach(({ id }) => {
-  gsap.from("#card-" + id, 1.2, {
-    y: 200,
-    delay: 0.5,
-  });
-});
-dataHeritageBuildings.forEach(({ id }) => {
-  gsap.from("#card-" + id, 1.4, {
-    y: 200,
-    delay: 0.5,
-  });
 });
 
 gsap.from(".title-testimoni", 1.3, {
