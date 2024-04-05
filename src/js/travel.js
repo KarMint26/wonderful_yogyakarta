@@ -219,6 +219,6 @@ const renderCard = (listData, container) =>
   });
 
 renderCard(dataTravelsSleman, tabSleman);
-renderCard(dataTravelsSleman, tabGunungkidul);
+renderCard(dataTravelsGunungkidul, tabGunungkidul);
 renderCard(dataTravelsKulonprogo, tabKulonprogo);
 renderCard(dataTravelsBantul, tabBantul);

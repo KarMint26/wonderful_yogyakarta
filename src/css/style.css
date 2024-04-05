@@ -1202,14 +1202,14 @@ html {
   }
 }
 
-/* SFG Section */
-#sfg {
+/* Specialty Snacks Section */
+#ss {
   margin: 1.5rem 0;
   width: 100%;
   height: fit-content;
 }
 
-#sfg .title-sfg {
+#ss .title-ss {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1219,96 +1219,100 @@ html {
   margin-bottom: 0.5rem;
 }
 
-#sfg .title-sfg h1 {
+#ss .title-ss h1 {
   font-size: 1.75rem;
   font-weight: 600;
 }
 
-#sfg .title-sfg p {
+#ss .title-ss p {
   font-size: 0.8rem;
   text-align: center;
 }
 
-#sfg .carousel {
+#ss .carousel {
   width: 100%;
   height: 250px;
 }
 
-#sfg .img-carousel-sfg {
+#ss .img-carousel-ss {
   width: 100%;
   height: 250px;
   filter: brightness(0.6);
 }
 
-#sfg .carousel-caption h5 {
+#ss .carousel-caption h5 {
   font-size: 1rem;
 }
 
-#sfg .carousel-caption p {
+#ss .carousel-caption p {
   font-size: 0.65rem;
 }
 
+#ss .carousel-indicators button.active {
+  background-color: var(--primary);
+}
+
 @media screen and (min-width: 768px) {
-  #sfg {
+  #ss {
     margin: 2rem 0;
   }
 
-  #sfg .title-sfg {
+  #ss .title-ss {
     margin-bottom: 1.5rem;
     padding: 0 4rem;
   }
 
-  #sfg .title-sfg h1 {
+  #ss .title-ss h1 {
     font-size: 2.5rem;
   }
 
-  #sfg .title-sfg p {
+  #ss .title-ss p {
     font-size: 1.2rem;
   }
 
-  #sfg .carousel {
+  #ss .carousel {
     height: 400px;
   }
 
-  #sfg .img-carousel-sfg {
+  #ss .img-carousel-ss {
     height: 400px;
   }
 
-  #sfg .carousel-caption h5 {
+  #ss .carousel-caption h5 {
     font-size: 1.8rem;
   }
 
-  #sfg .carousel-caption p {
+  #ss .carousel-caption p {
     font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #sfg {
+  #ss {
     margin: 3.5rem 0;
   }
 
-  #sfg .title-sfg h1 {
+  #ss .title-ss h1 {
     font-size: 3rem;
   }
 
-  #sfg .title-sfg p {
+  #ss .title-ss p {
     font-size: 1.3rem;
   }
 
-  #sfg .carousel {
+  #ss .carousel {
     height: 700px;
   }
 
-  #sfg .img-carousel-sfg {
+  #ss .img-carousel-ss {
     height: 700px;
   }
 
-  #sfg .carousel-caption h5 {
+  #ss .carousel-caption h5 {
     font-size: 2.5rem;
   }
 
-  #sfg .carousel-caption p {
+  #ss .carousel-caption p {
     font-size: 1.3rem;
   }
 }

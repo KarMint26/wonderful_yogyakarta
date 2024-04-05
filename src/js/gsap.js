@@ -160,18 +160,18 @@ gsap.from("#culinary_overview", 1.1, {
   },
 });
 
-// SFG
-gsap.from(".title-sfg", 1.1, {
+// Specialty Snacks
+gsap.from(".title-ss", 1.1, {
   opacity: 0,
   scale: 0,
   delay: 0.5,
   scrollTrigger: {
-    trigger: ".title-sfg",
+    trigger: ".title-ss",
     start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
   },
 });
 
-gsap.from("#carouselSpecialtyFoodGifts", 1.2, {
+gsap.from("#carouselSpecialtySnacks", 1.2, {
   opacity: 0,
   y: 200,
   delay: 0.3,
