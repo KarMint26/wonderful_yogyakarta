@@ -1170,6 +1170,7 @@ html {
   flex-direction: column-reverse;
   gap: 1rem;
   margin: 1.25rem 0;
+  background-color: var(--bgLight);
 }
 
 .hero-overview-culture {
