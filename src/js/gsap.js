@@ -165,6 +165,44 @@ gsap.from("section.hero a.btn-explore", 1.4, {
   y: 250,
   opacity: 0,
 });
+gsap.from(".title-culinary", 1.1, {
+  opacity: 0,
+  y: 150,
+  scrollTrigger: {
+    trigger: ".title-culinary",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#c-sc-1", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-1",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#c-sc-2", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-2",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#c-sc-3", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-3",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
 
 gsap.from(".title-testimoni", 1.3, {
   opacity: 0,
