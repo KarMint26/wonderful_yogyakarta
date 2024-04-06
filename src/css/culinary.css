@@ -82,6 +82,7 @@ p.title-desc {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
 }
 
 #culinary .title-culinary h1 {
@@ -181,12 +182,16 @@ p.title-desc {
 }
 
 #culinary .culinary-wrapper .culinary-sc .card-content .head-sc h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 #culinary .culinary-wrapper .culinary-sc .card-content .head-sc p {
   font-size: 1rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .desc-sc {
+  font-size: 0.9rem;
 }
 
 #culinary .culinary-wrapper .culinary-sc .card-content .price-sc {
@@ -336,6 +341,69 @@ p.title-desc {
 }
 
 #head-p-6.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Culinary 4 - Tengkleng Gajah */
+#head-p-7 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-7.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-8 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-8.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Culinary 5 - Brongkos */
+#head-p-9 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-9.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-10 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-10.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Culinary 6 - Mie Lethek */
+#head-p-11 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-11.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-12 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-12.active {
   display: block;
   opacity: 1;
 }

@@ -174,6 +174,7 @@ gsap.from(".title-culinary", 1.1, {
   },
 });
 
+// List Culinary
 gsap.from("#c-sc-1", 1.3, {
   opacity: 0,
   y: 150,
@@ -204,6 +205,37 @@ gsap.from("#c-sc-3", 1.3, {
   },
 });
 
+gsap.from("#c-sc-4", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-4",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#c-sc-5", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-5",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+gsap.from("#c-sc-6", 1.3, {
+  opacity: 0,
+  y: 150,
+  delay: 0.5,
+  scrollTrigger: {
+    trigger: "#c-sc-6",
+    start: "top 70%", // Mulai animasi saat elemen berada di tengah atas viewport
+  },
+});
+
+// Testimoni
 gsap.from(".title-testimoni", 1.3, {
   opacity: 0,
   scale: 0,

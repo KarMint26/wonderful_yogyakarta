@@ -32,3 +32,36 @@ $("#head-a-6").click(() => {
   $("#head-p-5").toggleClass("active");
   $("#head-p-6").toggleClass("active");
 });
+
+// Tengkleng Gajah
+$("#head-a-7").click(() => {
+  $("#head-p-7").toggleClass("active");
+  $("#head-p-8").toggleClass("active");
+});
+
+$("#head-a-8").click(() => {
+  $("#head-p-7").toggleClass("active");
+  $("#head-p-8").toggleClass("active");
+});
+
+// Brongkos
+$("#head-a-9").click(() => {
+  $("#head-p-9").toggleClass("active");
+  $("#head-p-10").toggleClass("active");
+});
+
+$("#head-a-10").click(() => {
+  $("#head-p-9").toggleClass("active");
+  $("#head-p-10").toggleClass("active");
+});
+
+// Mie Lethek
+$("#head-a-11").click(() => {
+  $("#head-p-11").toggleClass("active");
+  $("#head-p-12").toggleClass("active");
+});
+
+$("#head-a-12").click(() => {
+  $("#head-p-11").toggleClass("active");
+  $("#head-p-12").toggleClass("active");
+});
