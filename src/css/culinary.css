@@ -72,11 +72,181 @@ p.title-desc {
   border-radius: 1rem;
 }
 
+#culinary {
+  width: 100%;
+  height: fit-content;
+}
+
+#culinary .title-culinary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#culinary .title-culinary h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#culinary .title-culinary p {
+  font-size: 0.85rem;
+}
+
+#culinary .culinary-wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.75rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc {
+  width: 100%;
+  height: fit-content;
+  padding: 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .next-arr {
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  padding: 0.7rem;
+  background-color: var(--primary);
+  text-align: center;
+  color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transform: translateY(-50%);
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .prev-arr {
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  padding: 0.7rem;
+  background-color: var(--primary);
+  text-align: center;
+  color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transform: translateY(-50%);
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .location-rt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .location-rt .l-rt {
+  text-decoration: none;
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .head-sc h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .head-sc p {
+  font-size: 1rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc .card-content .price-sc {
+  color: var(--colorSubPrimary);
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+#culinary .culinary-wrapper .culinary-sc .img-culinary {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   section.hero h1 {
     font-size: 5rem;
   }
   p.title-desc {
+    font-size: 1.2rem;
+  }
+  #culinary .title-culinary h1 {
+    font-size: 2.5rem;
+  }
+  #culinary .title-culinary p {
+    font-size: 1.15rem;
+  }
+  #culinary .culinary-wrapper {
+    margin-top: 1rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc {
+    padding: 0 3rem 2rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .next-arr {
+    font-size: 1.2rem;
+    right: -1.25rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .prev-arr {
+    font-size: 1.2rem;
+    left: -1.25rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .location-rt {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .location-rt .l-rt {
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .head-sc h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .head-sc p {
+    font-size: 1.25rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .desc-sc {
+    font-size: 1.15rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc .card-content .price-sc {
+    color: var(--colorSubPrimary);
+    font-weight: 500;
     font-size: 1.2rem;
   }
 }
@@ -89,4 +259,83 @@ p.title-desc {
   p.title-desc {
     font-size: 1.4rem;
   }
+  #culinary .title-culinary h1 {
+    font-size: 3rem;
+  }
+  #culinary .culinary-wrapper {
+    margin-top: 2rem;
+  }
+  #culinary .culinary-wrapper .culinary-sc {
+    flex-direction: row;
+    padding: 0 4rem 2rem;
+    gap: 5rem;
+  }
+  #culinary .left-sc {
+    flex-direction: row-reverse !important;
+  }
+}
+
+/* behavior js */
+
+/* Culinary 1 - Gudeg */
+#head-p-1 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-1.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-2 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-2.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Culinary 2 - Bakmi Jawa */
+#head-p-3 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-3.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-4 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-4.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Culinary 3 - Sate Klatak */
+#head-p-5 {
+  display: block;
+  opacity: 1;
+}
+
+#head-p-5.active {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-6 {
+  display: none;
+  opacity: 0;
+}
+
+#head-p-6.active {
+  display: block;
+  opacity: 1;
 }
