@@ -160,15 +160,15 @@ gsap.from("section.hero h1", 1, {
   delay: 0.3,
 });
 gsap.from("section.hero p.title-desc", 1, {
-  y: 220,
+  y: 200,
   opacity: 0,
   delay: 0.4,
 });
-// gsap.from("#bex", 1, {
-//   y: 250,
-//   opacity: 0,
-//   delay: 0.5,
-// });
+gsap.from("#bex", 1, {
+  y: 200,
+  opacity: 0,
+  delay: 0.5,
+});
 gsap.from(".title-culinary", 1.1, {
   opacity: 0,
   y: 150,
