@@ -156,15 +156,19 @@ gsap.from(".carousel-container", 1.2, {
 // Travel, culture, culinary Section
 gsap.from("section.hero h1", 1, {
   y: 200,
+  opacity: 0,
+  delay: 0.3,
 });
-gsap.from("section.hero p.title-desc", 1.2, {
+gsap.from("section.hero p.title-desc", 1, {
   y: 220,
   opacity: 0,
+  delay: 0.4,
 });
-gsap.from("section.hero a.btn-explore", 1.4, {
-  y: 250,
-  opacity: 0,
-});
+// gsap.from(".btn-explore", 1, {
+//   y: 250,
+//   opacity: 0,
+//   delay: 0.5,
+// });
 gsap.from(".title-culinary", 1.1, {
   opacity: 0,
   y: 150,

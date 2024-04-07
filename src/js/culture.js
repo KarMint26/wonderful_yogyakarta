@@ -181,7 +181,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/${
+                  <iframe data-src="https://www.youtube.com/embed/${
                     data.yt
                   }" title='${
         data.title
@@ -202,7 +202,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src=${
+                  <iframe data-src=${
                     data.maps
                   } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
@@ -257,7 +257,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/${
+                  <iframe data-src="https://www.youtube.com/embed/${
                     data.yt
                   }" title='${
         data.title
@@ -278,7 +278,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src=${
+                  <iframe data-src=${
                     data.maps
                   } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
@@ -292,3 +292,30 @@ const renderCard = (listData, container) =>
 
 renderCard(dataHeritageBuildings, heritagesContainer);
 renderCard(dataCultureArts, culturalsContainer);
+
+// Implementasi Intersection Observer - Improve Performance Website
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyVideos = [].slice.call(
+    document.querySelectorAll("iframe[data-src]")
+  );
+
+  if ("IntersectionObserver" in window) {
+    let lazyVideoObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (video) {
+        if (video.isIntersecting) {
+          let videoSrc = video.target.getAttribute("data-src");
+          video.target.setAttribute("src", videoSrc);
+          video.target.removeAttribute("data-src");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function (video) {
+      lazyVideoObserver.observe(video);
+    });
+  }
+});

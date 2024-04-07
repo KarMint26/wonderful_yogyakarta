@@ -42,7 +42,7 @@ const dataTravelsSleman = [
     desc: "This museum was founded as a record of the eruption of Mount Merapi and was inaugurated in 2010.",
     time: "8.00-15.00 WIB",
     location: "Bull, Hargobinangun, Pakem, Sleman, Yogyakarta",
-    yt: "0XcEne8TUaM-",
+    yt: "opP3Q9GtV7U?si=3Rl6c44Ef4ROQKtx",
     maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.6230838081474!2d110.4243329!3d-7.615927200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5e6ec08af943%3A0xa843109615445506!2sMuseum%20Gunungapi%20Merapi!5e0!3m2!1sid!2sid!4v1712457898758!5m2!1sid!2sid",
   },
 ];
@@ -67,7 +67,7 @@ const dataTravelsBantul = [
     desc: "This is the tomb of the Sultan of Mataram and is considered a holy place. Visitors can visit this tomb wearing traditional Javanese clothing traditional clothes. It is only open on Monday, Friday, Sunday.",
     time: "08.00-17.00 WIB",
     location: "Karang Kulon, Wukirsari, Imogiri, Bantul, Yogyakarta",
-    yt: "httpsx5S_ZsRT4",
+    yt: "0-x5S_ZsRT4?si=3fiRdSnkfD5bY2-1",
     maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126456.20381089445!2d110.3338222457441!3d-7.920497399999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a54f951ef760f%3A0x99cd48194e507430!2sMakam%20Raja-Raja%20Imogiri!5e0!3m2!1sid!2sid!4v1712458061499!5m2!1sid!2sid",
   },
   {
@@ -225,7 +225,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/${data.yt}" title='${data.title}' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe data-src="https://www.youtube.com/embed/${data.yt}" title='${data.title}' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -240,7 +240,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src=${data.maps} style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe data-src=${data.maps} style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
               </div>
@@ -275,7 +275,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/${data.yt}" title='${data.title}' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe data-src="https://www.youtube.com/embed/${data.yt}" title='${data.title}' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -290,7 +290,7 @@ const renderCard = (listData, container) =>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                  <iframe src=${data.maps} style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe data-src=${data.maps} style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
               </div>
@@ -304,3 +304,30 @@ renderCard(dataTravelsSleman, tabSleman);
 renderCard(dataTravelsGunungkidul, tabGunungkidul);
 renderCard(dataTravelsKulonprogo, tabKulonprogo);
 renderCard(dataTravelsBantul, tabBantul);
+
+// Implementasi Intersection Observer - Improve Performance Website
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyVideos = [].slice.call(
+    document.querySelectorAll("iframe[data-src]")
+  );
+
+  if ("IntersectionObserver" in window) {
+    let lazyVideoObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (video) {
+        if (video.isIntersecting) {
+          let videoSrc = video.target.getAttribute("data-src");
+          video.target.setAttribute("src", videoSrc);
+          video.target.removeAttribute("data-src");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function (video) {
+      lazyVideoObserver.observe(video);
+    });
+  }
+});

@@ -133,9 +133,13 @@ iframe {
 
 .text-subtitle {
   color: var(--primary);
-  margin-bottom: 2rem;
-  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
+}
+
+.ts-2 {
+  margin-top: 2rem;
 }
 
 .text-subtitle span {
@@ -174,6 +178,13 @@ iframe {
   .btn-secondary {
     font-size: 1rem;
   }
+  .text-subtitle {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .ts-2 {
+    margin-top: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -195,5 +206,12 @@ iframe {
   .card-travel .img-container {
     width: 50% !important;
     padding: 1rem;
+  }
+  .text-subtitle {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .ts-2 {
+    margin-top: 3.5rem;
   }
 }
