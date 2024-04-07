@@ -43,6 +43,7 @@ section .hero-img {
   filter: brightness(0.7);
   text-align: center;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 section.hero h1 {

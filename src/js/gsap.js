@@ -164,7 +164,7 @@ gsap.from("section.hero p.title-desc", 1, {
   opacity: 0,
   delay: 0.4,
 });
-// gsap.from(".btn-explore", 1, {
+// gsap.from("#bex", 1, {
 //   y: 250,
 //   opacity: 0,
 //   delay: 0.5,
