@@ -79,10 +79,9 @@ const dataHeritageBuildings = [
     maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0778419256762!2d110.50458270000001!3d-7.781571400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5aa458b4665b%3A0xa4b0fc6ad0ae38c7!2sTebing%20Breksi!5e0!3m2!1sen!2sid!4v1712384001303!5m2!1sen!2sid",
   },
 ];
-
 const dataCultureArts = [
   {
-    id: 11,
+    id: 1,
     title: "Wayang Kulit",
     desc: "Shadow puppetry is a form of puppet theater in which shadow puppets made of leather are backlit and played by puppeteers. The performance is usually accompanied by a gamelan and a puppeteer who narrates the story. Shadow puppetry is a popular folk entertainment in Java, and there are many shadow puppet shows held in Yogyakarta.",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-wk.png",
@@ -92,7 +91,7 @@ const dataCultureArts = [
     discover: "existed in Indonesia since the 10th century",
   },
   {
-    id: 12,
+    id: 2,
     title: "Bedhaya Dance",
     desc: "Bedhaya Dance is Yogyakarta's most sacred classical dance. The Bedhaya dance is danced by nine female dancers and symbolizes purity and elegance.",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-bd.png",
@@ -102,7 +101,7 @@ const dataCultureArts = [
     discover: "by Sultan Agung Hanyokrokusumo ",
   },
   {
-    id: 13,
+    id: 3,
     title: "Sekaten",
     desc: "Sekaten is a royal ceremony held twice a year to commemorate the birth of the Prophet Muhammad. The ceremony involves a large procession in an elaborately decorated golden carriage carrying offerings from the sultan to the Grand Mosque of Yogyakarta.",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-s.png",
@@ -112,7 +111,7 @@ const dataCultureArts = [
     discover: "by Sunan Kalijaga in the 15th century",
   },
   {
-    id: 14,
+    id: 4,
     title: "Gamelan",
     desc: "Yogyakarta Gamelan is a type of gamelan that has its own characteristics. Yogyakarta gamelan has a smoother and more melodious sound compared to gamelan from other regions in Java. This is because Yogyakarta gamelan uses slendro tunings which use more pentatonic notes.",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-g.png",
@@ -122,7 +121,7 @@ const dataCultureArts = [
     discover: "Sultan Hamengkubuwono I (1755-1792)",
   },
   {
-    id: 15,
+    id: 5,
     title: "Batik",
     desc: "Batik is a traditional wax resist dyeing technique applied to the entire fabric. It is an important part of Indonesian culture, and Yogyakarta is one of the most famous batik production centers. Batik cloth from Yogyakarta is famous for its intricate designs and bright colors.",
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-b.png",
@@ -160,52 +159,13 @@ const renderCard = (listData, container) =>
                   data.location
                 }</span></div>
                 <div class="d-flex gap-3">
-                  <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#video-${
+                  <button onclick="clickModal(${
                     data.id
-                  }'
+                  },${listData})" class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#modalDetail'
                   ><i class="fa-solid fa-video"></i> Watch Video</button>
                   <button data-bs-toggle="modal" data-bs-target='#map-${
                     data.id
                   }' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
-                </div>
-              </div>
-            </div>
-            <!-- modal videos -->
-            <div class="modal modal-lg fade" id="video-${
-              data.id
-            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" >Video of ${data.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  <iframe data-src="https://www.youtube.com/embed/${
-                    data.yt
-                  }" title='${
-        data.title
-      }' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- modal map -->
-            <div class="modal modal-lg fade" id="map-${
-              data.id
-            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" >Map of ${data.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  <iframe data-src=${
-                    data.maps
-                  } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
                 </div>
               </div>
             </div>
@@ -230,9 +190,9 @@ const renderCard = (listData, container) =>
               data.location
             } </span></div>
             <div class="d-flex gap-3">
-              <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#video-${
+              <button onclick="clickModal(${
                 data.id
-              }'
+              },${listData})" class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#modalDetail'
               ><i class="fa-solid fa-video"></i> Watch Video</button>
               <button data-bs-toggle="modal" data-bs-target='#map-${
                 data.id
@@ -245,46 +205,6 @@ const renderCard = (listData, container) =>
       } class="object-fit-cover" style="width: 100%; height: 100%;" />
           </div>
         </div>
-
-        <!-- modal videos -->
-            <div class="modal modal-lg fade" id="video-${
-              data.id
-            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" >Video of ${data.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  <iframe data-src="https://www.youtube.com/embed/${
-                    data.yt
-                  }" title='${
-        data.title
-      }' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- modal map -->
-            <div class="modal modal-lg fade" id="map-${
-              data.id
-            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" >Map of ${data.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                  <iframe data-src=${
-                    data.maps
-                  } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
       </div>`;
     }
     container.innerHTML += card;
@@ -293,29 +213,52 @@ const renderCard = (listData, container) =>
 renderCard(dataHeritageBuildings, heritagesContainer);
 renderCard(dataCultureArts, culturalsContainer);
 
-// Implementasi Intersection Observer - Improve Performance Website
-document.addEventListener("DOMContentLoaded", function () {
-  const lazyVideos = [].slice.call(
-    document.querySelectorAll("iframe[data-src]")
+let detailId = 1;
+let nameOfData = "dataHeritageBuildings";
+const EVENT_RENDER_POPUP = "modalbox-popup";
+function modalData() {
+  const modal_title = document.getElementById("mt");
+  const modal_if = document.getElementById("fry");
+
+  modal_title.innerText = nameOfData[detailId - 1].title;
+  modal_if.setAttribute("title", nameOfData[detailId - 1].title);
+  modal_if.setAttribute(
+    "src",
+    `https://www.youtube.com/embed/${nameOfData[detailId - 1].yt}`
   );
+}
 
-  if ("IntersectionObserver" in window) {
-    let lazyVideoObserver = new IntersectionObserver(function (
-      entries,
-      observer
-    ) {
-      entries.forEach(function (video) {
-        if (video.isIntersecting) {
-          let videoSrc = video.target.getAttribute("data-src");
-          video.target.setAttribute("src", videoSrc);
-          video.target.removeAttribute("data-src");
-          lazyVideoObserver.unobserve(video.target);
-        }
-      });
-    });
+const clickModal = (id, nameOfData) => {
+  detailId = id;
+  nameOfData = nameOfData;
+  document.dispatchEvent(new Event(EVENT_RENDER_POPUP));
+};
 
-    lazyVideos.forEach(function (video) {
-      lazyVideoObserver.observe(video);
-    });
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  // const lazyVideos = [].slice.call(
+  //   document.querySelectorAll("iframe[data-src]")
+  // );
+
+  // if ("IntersectionObserver" in window) {
+  //   let lazyVideoObserver = new IntersectionObserver(function (
+  //     entries,
+  //     observer
+  //   ) {
+  //     entries.forEach(function (video) {
+  //       if (video.isIntersecting) {
+  //         let videoSrc = video.target.getAttribute("data-src");
+  //         video.target.setAttribute("src", videoSrc);
+  //         video.target.removeAttribute("data-src");
+  //         lazyVideoObserver.unobserve(video.target);
+  //       }
+  //     });
+  //   });
+
+  //   lazyVideos.forEach(function (video) {
+  //     lazyVideoObserver.observe(video);
+  //   });
+  // }
+
+  document.addEventListener(EVENT_RENDER_POPUP, modalData());
+  modalData();
 });
