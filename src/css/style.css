@@ -1809,14 +1809,12 @@ html {
 .btn-explore {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  filter: none;
   background-color: var(--primary);
   text-decoration: none;
   color: white;
   text-align: center;
   font-weight: 600;
   border: 2px solid var(--primary);
-  transition: 300ms ease-in-out;
   border-radius: 1rem;
 }
 

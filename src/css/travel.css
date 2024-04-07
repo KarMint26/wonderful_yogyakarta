@@ -39,7 +39,7 @@ section .hero-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: brightness(0.7);
+  filter: brightness(0.5);
   text-align: center;
   background-attachment: fixed;
   z-index: -1;

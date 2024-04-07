@@ -167,9 +167,7 @@ gsap.from("section.hero p.title-desc", 1, {
 gsap.from("#bex", 1, {
   y: 200,
   opacity: 0,
-  scrollTrigger: {
-    trigger: "section.hero h1",
-  },
+  delay: 0.5,
 });
 gsap.from(".title-culinary", 1.1, {
   opacity: 0,
