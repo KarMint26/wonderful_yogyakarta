@@ -60,18 +60,6 @@ p.title-desc {
   text-shadow: 0 10px 5px 10px #0004;
 }
 
-.btn-explore {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  filter: none;
-  background-color: var(--primary);
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 1rem;
-}
-
 #culinary {
   width: 100%;
   height: fit-content;
@@ -159,6 +147,12 @@ p.title-desc {
   transform: translateY(-50%);
 }
 
+.card-content .prev-arr:hover,
+.card-content .next-arr:hover {
+  background-color: var(--primaryHover) !important;
+  transition: 300ms ease-in-out;
+}
+
 #culinary .culinary-wrapper .culinary-sc .card-content .location-rt {
   display: flex;
   justify-content: center;
@@ -177,8 +171,14 @@ p.title-desc {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  transition: 300ms ease-in-out;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-content .location-rt .l-rt:hover {
+  background-color: var(--primaryHover) !important;
+  transition: 300ms ease-in-out;
 }
 
 #culinary .culinary-wrapper .culinary-sc .card-content .head-sc h1 {

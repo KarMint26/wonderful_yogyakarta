@@ -60,18 +60,6 @@ p.title-desc {
   text-shadow: 0 10px 5px 10px #0004;
 }
 
-.btn-explore {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  filter: none;
-  background-color: var(--primary);
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 1rem;
-}
-
 .btn-card {
   outline: none !important;
   display: flex;
@@ -91,15 +79,14 @@ p.title-desc {
   background-color: var(--primary);
   color: #fff;
 }
+.btn-primary:hover {
+  background-color: var(--primaryHover);
+  color: #fff;
+}
 
 .btn-secondary {
   background-color: #fff;
   color: var(--primary);
-}
-
-.btn-primary:hover {
-  background-color: var(--primary);
-  color: #fff;
 }
 
 .btn-secondary:hover {

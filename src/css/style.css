@@ -4,6 +4,7 @@
 /* Global Styling and CSS Variable */
 :root {
   --primary: #e48e27;
+  --primaryHover: #c07a24;
   --secondary: #e61c5d;
   --footerColor: #2c2c2c;
   --bgLight: #f1d8bb;
@@ -195,38 +196,43 @@ html {
   color: var(--primary);
 }
 .carousel .list .item .buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 130px);
-  grid-template-rows: 40px;
+  display: flex;
   gap: 15px;
   margin-top: 20px;
 }
 .carousel .list .item .buttons a {
-  border: none;
-  background-color: #e48e27;
-  letter-spacing: 1px;
-  border-radius: 0.3rem;
-  font-family: Poppins;
-  font-weight: 500;
+  padding: 0.75rem 1.3rem;
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
   color: #fff;
   text-align: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 0.85rem;
   transition: 300ms ease-in-out;
+  gap: 0.75rem;
 }
-.carousel .list .item .buttons a:hover {
-  letter-spacing: 2px;
+
+.carousel .list .item .buttons a i {
+  margin-right: 0.5rem;
+}
+
+.carousel .list .item .buttons a:first-child {
+  background-color: var(--primary);
+}
+.carousel .list .item .buttons a:first-child:hover {
+  background-color: var(--primaryHover);
 }
 .carousel .list .item .buttons a:nth-child(2) {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #eee;
+  background-color: #fff;
+  color: var(--primary);
   transition: 300ms ease-in-out;
 }
 .carousel .list .item .buttons a:nth-child(2):hover {
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #000;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: #fff;
 }
 /* thumbail */
 .thumbnail {
@@ -488,18 +494,22 @@ html {
 }
 
 #about .modal-btn-history {
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   background-color: var(--primary);
-  border: none;
   outline: none;
   font-weight: 600;
   color: white;
   font-size: 0.85rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.3rem;
+  border: 2px solid var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+#about .modal-btn-history:hover {
+  background-color: var(--primaryHover);
 }
 
 .thumb-history {
@@ -536,7 +546,8 @@ html {
   }
   #about .modal-btn-history {
     font-size: 1rem;
-    padding: 0.85rem 1.5rem;
+    padding: 0.75rem 1.3rem;
+    border: 2px solid var(--primary);
   }
   .thumb-history {
     height: 350px;
@@ -1230,17 +1241,18 @@ html {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #fff;
   background-color: var(--primary);
-  padding: 0.65rem 1rem;
-  border-radius: 0.4rem;
+  color: #fff;
+  padding: 0.75rem 1.3rem;
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
   font-size: 0.9rem;
   align-self: flex-start;
   transition: 300ms ease-in-out;
 }
 
 .content-custom-overview .btn-custom-overview:hover {
-  filter: brightness(0.95);
+  background-color: var(--primaryHover);
 }
 
 @media screen and (min-width: 768px) {
@@ -1266,7 +1278,8 @@ html {
   }
 
   .content-custom-overview .btn-custom-overview {
-    padding: 0.8rem 1.25rem;
+    padding: 0.75rem 1.3rem;
+    border: 2px solid var(--primary);
     font-size: 1.35rem;
   }
 
@@ -1344,7 +1357,7 @@ html {
   width: 120px;
   height: 120px;
   z-index: -1;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: var(--primary);
 }
 
@@ -1356,7 +1369,7 @@ html {
   width: 120px;
   height: 120px;
   z-index: -1;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: var(--primary);
 }
 
@@ -1782,4 +1795,42 @@ html {
 .social-media-m a {
   color: #fff;
   font-size: 1.2rem;
+}
+
+/* travels, culinary, culture */
+.btn-explore {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  filter: none;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid var(--primary);
+  transition: 300ms ease-in-out;
+  border-radius: 1rem;
+}
+
+.btn-explore i {
+  margin-right: 0.5rem;
+}
+
+.btn-explore:hover {
+  background-color: var(--primaryHover);
+}
+
+.btn-card {
+  outline: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.3rem;
+  border: 2px solid var(--primary);
+  text-align: center;
+  font-weight: 600;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  transition: 300ms ease-in-out;
+  gap: 0.75rem;
 }
