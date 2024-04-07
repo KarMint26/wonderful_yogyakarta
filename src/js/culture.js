@@ -10,7 +10,7 @@ const dataHeritageBuildings = [
     time: "06.00-17.00 WIB",
     location: "Kranggan, Bokoharjo, Prambanan,Sleman, Yogyakarta",
     yt: "MhifUwbQj6o",
-    maps: "https://maps.app.goo.gl/4ZFp5BH7zV1wvpxj8",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.3559336818375!2d110.49146739999999!3d-7.752020600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5ae3dbd859d1%3A0x19e7a03b25955a2d!2sPrambanan%20Temple!5e0!3m2!1sen!2sid!4v1712382913624!5m2!1sen!2sid",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const dataHeritageBuildings = [
     time: "08.30-14.30 WIB",
     location: "Ngayogyakarta Hadiningrat Palace",
     yt: "gsSsT0t7GMQ",
-    maps: "https://maps.app.goo.gl/UYnea5RUhQQXY5QM9",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8539261539095!2d110.3642031!3d-7.8052845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5796db06c7ef%3A0x395271cf052b276c!2sKeraton%20Ngayogyakarta%20Hadiningrat!5e0!3m2!1sid!2sid!4v1712383735437!5m2!1sid!2sid",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const dataHeritageBuildings = [
     time: "06.00-17.00 WIB",
     location: "Gatak, Prambanan, Sleman, Yogyakarta",
     yt: "V37HO2J3IFc",
-    maps: "https://maps.app.goo.gl/PxtEUNJcG83oRvr49",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.18176233424!2d110.48941579999999!3d-7.7705416000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a92d354fe45%3A0x153f44f14476f95b!2sRatu%20Boko%20Temple!5e0!3m2!1sen!2sid!4v1712383809874!5m2!1sen!2sid",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const dataHeritageBuildings = [
     time: "07.00-17.00 WIB",
     location: "Kikis, Sambirejo, Prambanan, Sleman, Yogyakarta",
     yt: "uU2vxLPhAdA",
-    maps: "https://maps.app.goo.gl/FTEoAVaCMiepbQm56",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.056572103906!2d110.5118835!3d-7.783827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5b1232407aa5%3A0x645c50631c5aaaeb!2sCandi%20Ijo!5e0!3m2!1sen!2sid!4v1712383836936!5m2!1sen!2sid",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const dataHeritageBuildings = [
     time: "08.00-16.00 WIB",
     location: "Kranggan, Bokoharjo, Prambanan,Sleman, Yogyakarta",
     yt: "MrmpLjOsO4k",
-    maps: "https://maps.app.goo.gl/xVFp8HBaXT7bsYuV7",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2579177804782!2d110.4470388!3d-7.762448800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a39b544a4ab%3A0xd8f5c2d79ac124f3!2sSambisari%20Temple!5e0!3m2!1sen!2sid!4v1712383907308!5m2!1sen!2sid",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const dataHeritageBuildings = [
     time: "09.00-17.00 WIB",
     location: "Candi Plaosan St. Bugisan, Prambanan, Klaten",
     yt: "D71nX5D2drI",
-    maps: "https://maps.app.goo.gl/iA8JgWJtzzNSm3G57",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.4614322014104!2d110.50467719999999!3d-7.740780699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5b6cbfffffff%3A0xf2f393c49bd04045!2sPlaosan%20Temple!5e0!3m2!1sen!2sid!4v1712383950947!5m2!1sen!2sid",
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ const dataHeritageBuildings = [
     time: "05.00-18.00 WIB",
     location: "Gunung Sari, Sambirejo, Yogyakarta",
     yt: "8OFxUyp8tys",
-    maps: "https://maps.app.goo.gl/9vWLdVNT67zYM3k87",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0778419256762!2d110.50458270000001!3d-7.781571400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5aa458b4665b%3A0xa4b0fc6ad0ae38c7!2sTebing%20Breksi!5e0!3m2!1sen!2sid!4v1712384001303!5m2!1sen!2sid",
   },
 ];
 
@@ -88,7 +88,7 @@ const dataCultureArts = [
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-wk.png",
     location: "Sonobudoyo Museum",
     yt: "JdctwQWkMOc",
-    maps: "https://maps.app.goo.gl/nnqboMKQ3Z6gQwtR8",
+    maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3952.8818303505586!2d110.359438!3d-7.8023333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a578f83070a4f%3A0x9d10431ac43ec5ee!2sMuseum%20Sonobudoyo%20Unit%20I!5e0!3m2!1sid!2sid!4v1712384042845!5m2!1sid!2sid",
     discover: "existed in Indonesia since the 10th century",
   },
   {
@@ -98,7 +98,7 @@ const dataCultureArts = [
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-bd.png",
     location: "Ngayogyakarta Hadiningrat Palace",
     yt: "Swq0JrLrg0I",
-    maps: "https://maps.app.goo.gl/UYnea5RUhQQXY5QM9",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8539261539095!2d110.3642031!3d-7.8052845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5796db06c7ef%3A0x395271cf052b276c!2sKeraton%20Ngayogyakarta%20Hadiningrat!5e0!3m2!1sid!2sid!4v1712384113980!5m2!1sid!2sid",
     discover: "by Sultan Agung Hanyokrokusumo ",
   },
   {
@@ -108,7 +108,7 @@ const dataCultureArts = [
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-s.png",
     location: "Ngayogyakarta Hadiningrat Palace",
     yt: "feWYlXUKZ1M",
-    maps: "https://maps.app.goo.gl/UYnea5RUhQQXY5QM9",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8539261539095!2d110.3642031!3d-7.8052845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5796db06c7ef%3A0x395271cf052b276c!2sKeraton%20Ngayogyakarta%20Hadiningrat!5e0!3m2!1sid!2sid!4v1712384113980!5m2!1sid!2sid",
     discover: "by Sunan Kalijaga in the 15th century",
   },
   {
@@ -118,7 +118,7 @@ const dataCultureArts = [
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-g.png",
     location: "Ngayogyakarta Hadiningrat Palace",
     yt: "WpzJPVsvGIk",
-    maps: "https://maps.app.goo.gl/UYnea5RUhQQXY5QM9",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8539261539095!2d110.3642031!3d-7.8052845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5796db06c7ef%3A0x395271cf052b276c!2sKeraton%20Ngayogyakarta%20Hadiningrat!5e0!3m2!1sid!2sid!4v1712384113980!5m2!1sid!2sid",
     discover: "Sultan Hamengkubuwono I (1755-1792)",
   },
   {
@@ -128,7 +128,7 @@ const dataCultureArts = [
     image: "https://techtitans.sirv.com/wonderful-yogyakarta/culture/p-b.png",
     location: "Kauman Batik Village",
     yt: "YsexBjlds9A",
-    maps: "https://maps.app.goo.gl/um7gEoDY6DhKp8D37",
+    maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7910.030564586846!2d110.825881!3d-7.573312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a177fb06ec2e5%3A0x13604084a482227c!2sKampung%20Batik%20Kauman!5e0!3m2!1sid!2sid!4v1712384257901!5m2!1sid!2sid",
     discover: "existed since the 7th century.",
   },
 ];
@@ -160,32 +160,51 @@ const renderCard = (listData, container) =>
                   data.location
                 }</span></div>
                 <div class="d-flex gap-3">
-                  <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#${
-                    data.maps
+                  <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#video-${
+                    data.id
                   }'
                   ><i class="fa-solid fa-video"></i> Watch Video</button>
-                  <button onClick='window.open("${
-                    data.maps
-                  }")' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
+                  <button data-bs-toggle="modal" data-bs-target='#map-${
+                    data.id
+                  }' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
                 </div>
               </div>
             </div>
-            <!-- Vertically centered modal -->
-            <div class="modal modal-lg fade" id=${
-              data.maps
-            } data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <!-- modal videos -->
+            <div class="modal modal-lg fade" id="video-${
+              data.id
+            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id=${data.maps}>Video of ${
-        data.title
-      }</h1>
+                    <h1 class="modal-title fs-5" >Video of ${data.title}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                   <iframe src="https://www.youtube.com/embed/${
                     data.yt
-                  }" title="Spring Lofi 🌸 Lofi Keep You Safe 🌼 Smooth Mind with Spring Lofi Hip Hop ~ beats relax,sleep..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  }" title='${
+        data.title
+      }' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal map -->
+            <div class="modal modal-lg fade" id="map-${
+              data.id
+            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" >Map of ${data.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <iframe src=${
+                    data.maps
+                  } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
               </div>
@@ -211,14 +230,14 @@ const renderCard = (listData, container) =>
               data.location
             } </span></div>
             <div class="d-flex gap-3">
-              <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#${
-                data.maps
+              <button class="btn-card btn-primary" data-bs-toggle="modal" data-bs-target='#video-${
+                data.id
               }'
               ><i class="fa-solid fa-video"></i> Watch Video</button>
-              <button onClick='window.open("${
-                data.maps
-              }")' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
-            </div>
+              <button data-bs-toggle="modal" data-bs-target='#map-${
+                data.id
+              }' class="btn-card btn-secondary"> <i class="bi bi-map-fill"></i> See Map</button>
+          </div>
           </div>
           <div class="img-container">
             <img src=${data.image} alt=${
@@ -227,22 +246,41 @@ const renderCard = (listData, container) =>
           </div>
         </div>
 
-        <!-- Vertically centered modal -->
-            <div class="modal modal-lg fade" id=${
-              data.maps
-            } data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <!-- modal videos -->
+            <div class="modal modal-lg fade" id="video-${
+              data.id
+            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id=${data.maps}>Video of ${
-        data.title
-      }</h1>
+                    <h1 class="modal-title fs-5" >Video of ${data.title}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                   <iframe src="https://www.youtube.com/embed/${
                     data.yt
-                  }" title="Spring Lofi 🌸 Lofi Keep You Safe 🌼 Smooth Mind with Spring Lofi Hip Hop ~ beats relax,sleep..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  }" title='${
+        data.title
+      }' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal map -->
+            <div class="modal modal-lg fade" id="map-${
+              data.id
+            }" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" >Map of ${data.title}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <iframe src=${
+                    data.maps
+                  } style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
               </div>
