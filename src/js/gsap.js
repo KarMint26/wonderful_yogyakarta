@@ -21,7 +21,7 @@ gsap.from(".bot-text-head", 1.2, {
 });
 gsap.from(".desc-about", 1.2, {
   opacity: 0,
-  x: 50,
+  y: 100,
   delay: 1,
   scrollTrigger: {
     trigger: ".top-text-head",
