@@ -34,7 +34,7 @@ const contentFooter = `
     <div
         class="copyright-d d-flex justify-content-center align-items-center"
     >
-        @Copyright 2024 TechTitans - WDC UNISNU 2024
+        @Copyright 2025 Wonderful Yogyakarta - KONKITI 2025
     </div>
     <div
         class="social-media d-flex justify-content-center align-items-center gap-3 gap-lg-4"
@@ -100,7 +100,7 @@ const contentFooter = `
 <div
   class="w-100 copyright-m d-flex justify-content-center align-items-center py-2 border-top border-light"
 >
-  @Copyright 2024 TechTitans - WDC UNISNU 2024
+  @Copyright 2025 Wonderful Yogyakarta - KONKITI 2025
 </div>
 </footer>
 `;
